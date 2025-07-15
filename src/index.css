@@ -14,3 +14,70 @@ body,
 body {
   background-color: #111;
 }
+
+
+.info-container {
+  position: fixed;
+  bottom: 15rem;
+  left: 10rem;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  color: white;
+  user-select: none;
+  z-index: 1000;
+  max-width: 200px;
+}
+
+.info-title {
+  margin: 5px;
+  font-weight: bold;
+  font-size: 70px;
+  white-space: nowrap; /* Evita que el texto haga salto de línea */
+  font-family: 'Playfair Display', serif;
+}
+
+.subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  color: #ccc;
+  margin-bottom: 30px;
+  white-space: nowrap; /* Evita que el texto haga salto de línea */
+}
+
+.portfolio-button {
+  display: inline-block;
+  padding: 12px 24px;
+  left: 130px;
+  background-color: #0056b3;
+  color: white;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  user-select: none;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+
+.portfolio-button:hover {
+  background-color: #fff;
+  color: #0056b3;
+}
+
+/* styles.css */
+.portfolio-container {
+  background-color: #fff;
+  background-image: url('../src/assets/portfolio.png'); /* puede ser relativa a /public o una url */
+  background-size: cover;       /* que la imagen cubra todo */
+  background-position: center;  /* centrada */
+  background-repeat: no-repeat; /* no se repita */
+  height: 100vh;                /* que ocupe toda la pantalla */
+  color: white;                 /* texto claro para contraste */
+  padding: 2rem;
+}
