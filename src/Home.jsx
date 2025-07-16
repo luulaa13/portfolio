@@ -33,8 +33,9 @@ export default function App() {
       </Canvas>
 
       <div className="info-container">
-        <h1 className="info-title">Hola, soy Lucía</h1>
-        <p className="subtitle">Software Developer & UX/UI Designer</p>
+       <p class="intro">Hi! I'm</p>
+        <h1>Lucia Garcia</h1>
+        <p class="subtitle">Software Developer & UX/UI Designer</p>
         <Link to="/portfolio" className="portfolio-button">
           Ver portfolio
         </Link>
