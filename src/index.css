@@ -175,7 +175,7 @@ body.dark .navbar {
 .theme-toggle {
   padding: 0.5rem 1rem;
   border-radius: 999px; /* botones redondeados estilo pill */
-  background-color: rgba(0, 0, 0, 0.05); /* fondo suave */
+  background-color: #0056b3; /* fondo suave */
   color: inherit;
   text-decoration: none;
   border: none;
@@ -186,17 +186,17 @@ body.dark .navbar {
 
 .nav-links a:hover,
 .theme-toggle:hover {
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: #0056b3;
 }
 
 body.dark .nav-links a,
 body.dark .theme-toggle {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #0056b3;
 }
 
 body.dark .nav-links a:hover,
 body.dark .theme-toggle:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #0056b3;
 }
 
 .theme-toggle {
