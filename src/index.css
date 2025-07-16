@@ -144,19 +144,18 @@ h1 {
 }
 
 
-
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  background: white;
-  color: black;
+  background: transparent; /* antes: white */
+  color: inherit;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 999;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: none; /* quita la sombra */
 }
 
 body.dark .navbar {
