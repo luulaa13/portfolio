@@ -1,4 +1,4 @@
-import Navbar from '../components/Navbar'
+import Navbar from './Navbar.jsx'
 import React from 'react'
 
 const Portfolio = () => {
