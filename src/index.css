@@ -80,6 +80,18 @@ h1 {
   color: #0056b3;
 }
 
+/* styles.css */
+.portfolio-container {
+  background-color: #fff;
+  background-image: url('/portfolio.png'); /* puede ser relativa a /public o una url */
+  background-size: cover;       /* que la imagen cubra todo */
+  background-position: center;  /* centrada */
+  background-repeat: no-repeat; /* no se repita */
+  height: 100vh;                /* que ocupe toda la pantalla */
+  color: white;                 /* texto claro para contraste */
+  padding: 2rem;
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
