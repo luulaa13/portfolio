@@ -14,7 +14,8 @@ useTexture.preload(bandTexture)
 
 export default function App() {
   const isMobile = window.innerWidth <= 768
-
+  const cardRotation = isMobile ? [0.1, Math.PI, 0] : [0, Math.PI, 0];
+  
   return (
     <>
       <Canvas camera={{ position: isMobile ? [0, 0, 15] : [0, 0, 13], fov: 25 }}>
@@ -52,6 +53,7 @@ function Band({ maxSpeed = 50, minSpeed = 10, isMobile }) {
   const [curve] = useState(() => new THREE.CatmullRomCurve3([new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3()]))
   const [dragged, drag] = useState(false)
   const [hovered, hover] = useState(false)
+  
 
   useRopeJoint(fixed, j1, [[0, 0, 0], [0, 0, 0], 1])
   useRopeJoint(j1, j2, [[0, 0, 0], [0, 0, 0], 1])
@@ -114,7 +116,7 @@ function Band({ maxSpeed = 50, minSpeed = 10, isMobile }) {
           <group
             scale={isMobile ? 2.2 : 2.25}
             position={[0, -1.2, -0.05]}
-            rotation={[0, Math.PI, 0]}
+            rotation={cardRotation}
             onPointerOver={() => hover(true)}
             onPointerOut={() => hover(false)}
             onPointerUp={(e) => (e.target.releasePointerCapture(e.pointerId), drag(false))}
