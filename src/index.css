@@ -102,9 +102,12 @@ h1 {
   }
 
   .info-container .subtitle {
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-  }
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.4;
+}
 
   .info-container .portfolio-button {
     font-size: 1rem;
