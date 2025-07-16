@@ -87,7 +87,7 @@ body {
 @media (max-width: 768px) {
   .info-container {
     position: absolute;
-    bottom: 15%; /* ⬆️ Mueve el contenedor más arriba (antes estaba en 5%) */
+    bottom: 50%; /* ⬆️ Mueve el contenedor más arriba (antes estaba en 5%) */
     left: 5%;
     right: 5%;
     padding: 1rem;
