@@ -31,6 +31,20 @@ body {
   max-width: 200px;
 }
 
+.intro {
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  color: #ccff00;
+  margin: 10px 0 0;
+}
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+
 .info-title {
   margin: 5px;
   font-weight: bold;
@@ -41,8 +55,7 @@ body {
 
 .subtitle {
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-  font-weight: lighter;
+  font-size: 16px;
   color: #ccc;
   margin-bottom: 30px;
   white-space: nowrap; /* Evita que el texto haga salto de línea */
