@@ -83,7 +83,7 @@ h1 {
 /* styles.css */
 .portfolio-container {
   background-color: #fff;
-  background-image: url('/portfolio.png'); /* puede ser relativa a /public o una url */
+  background-image: url('./assets/portfolio.png'); /* puede ser relativa a /public o una url */
   background-size: cover;       /* que la imagen cubra todo */
   background-position: center;  /* centrada */
   background-repeat: no-repeat; /* no se repita */
