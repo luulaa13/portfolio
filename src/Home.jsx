@@ -1,3 +1,48 @@
+import * as THREE from 'three'
+import { useEffect, useRef, useState } from 'react'
+import { Canvas, extend, useThree, useFrame } from '@react-three/fiber'
+import { useGLTF, useTexture, Environment, Lightformer, Text } from '@react-three/drei'
+import { BallCollider, CuboidCollider, Physics, RigidBody, useRopeJoint, useSphericalJoint } from '@react-three/rapier'
+import { MeshLineGeometry, MeshLineMaterial } from 'meshline'
+import { Link } from 'react-router-dom'
+import tagModel from './assets/scene.glb'
+import bandTexture from './assets/bandd.png'
+
+extend({ MeshLineGeometry, MeshLineMaterial })
+useGLTF.preload(tagModel)
+useTexture.preload(bandTexture)
+
+export default function App() {
+  const isMobile = window.innerWidth <= 768
+ 
+  
+  return (
+    <>
+      <Canvas camera={{ position: isMobile ? [0, 0, 15] : [0, 0, 13], fov: 25 }}>
+        <ambientLight intensity={Math.PI} />
+        <Physics interpolate gravity={[0, -40, 0]} timeStep={1 / 60}>
+          <Band isMobile={isMobile} />
+        </Physics>
+        <Environment background blur={0.75}>
+          <color attach="background" args={['black']} />
+          <Lightformer intensity={2} color="white" position={[0, -1, 5]} rotation={[0, 0, Math.PI / 3]} scale={[100, 0.1, 1]} />
+          <Lightformer intensity={3} color="white" position={[-1, -1, 1]} rotation={[0, 0, Math.PI / 3]} scale={[100, 0.1, 1]} />
+          <Lightformer intensity={3} color="white" position={[1, 1, 1]} rotation={[0, 0, Math.PI / 3]} scale={[100, 0.1, 1]} />
+          <Lightformer intensity={10} color="white" position={[-10, 0, 14]} rotation={[0, Math.PI / 2, Math.PI / 3]} scale={[100, 10, 1]} />
+        </Environment>
+      </Canvas>
+
+      <div className="info-container">
+        <h1 className="info-title">Hola, soy Lucía</h1>
+        <p className="subtitle">Software Developer & UX/UI Designer</p>
+        <Link to="/portfolio" className="portfolio-button">
+          Ver portfolio
+        </Link>
+      </div>
+    </>
+  )
+}
+
 function Band({ maxSpeed = 50, minSpeed = 10, isMobile }) {
   const band = useRef(), fixed = useRef(), j1 = useRef(), j2 = useRef(), j3 = useRef(), card = useRef()
   const vec = new THREE.Vector3(), ang = new THREE.Vector3(), rot = new THREE.Vector3(), dir = new THREE.Vector3()
@@ -9,7 +54,6 @@ function Band({ maxSpeed = 50, minSpeed = 10, isMobile }) {
   const [dragged, drag] = useState(false)
   const [hovered, hover] = useState(false)
 
-  
   // Rotación inicial para móviles
   useEffect(() => {
     if (isMobile && card.current) {
