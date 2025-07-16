@@ -17,100 +17,92 @@ body {
 
 
 .info-container {
-  position: fixed;
-  bottom: 15rem;
-  left: 10rem;
-  padding: 2px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
   color: white;
-  user-select: none;
-  z-index: 1000;
-  max-width: 200px;
-}
-
-
-h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  font-weight: 600;
-  margin: 5px 0;
-  text-transform: uppercase;
+  z-index: 10;
+  padding: 2rem;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  max-width: 90%;
+  width: 400px;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .intro {
-  font-family: 'Dancing Script', cursive;
-  font-size: 24px;
-  color: #ccff00;
-  margin: 10px 0 0;
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin: 0;
+}
+
+.info-container h1 {
+  font-size: 2.5rem;
+  margin: 0.3rem 0;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .subtitle {
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  color: #ccc;
-  margin-bottom: 20px;
-  white-space: nowrap; /* Evita que el texto haga salto de línea */
+  font-size: 1.1rem;
+  color: #dddddd;
+  margin-bottom: 2rem;
 }
 
 .portfolio-button {
   display: inline-block;
-  padding: 12px 24px;
-  left: 130px;
-  background-color: #0056b3;
-  color: white;
-  border-radius: 30px;
-  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 999px;
   text-decoration: none;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  user-select: none;
-  z-index: 1000;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
-
 
 .portfolio-button:hover {
-  background-color: #fff;
-  color: #0056b3;
+  background-color: #f0f0f0;
+  transform: scale(1.05);
 }
 
-/* styles.css */
-.portfolio-container {
-  background-color: #fff;
-  background-image: url('../src/assets/portfolio.png'); /* puede ser relativa a /public o una url */
-  background-size: cover;       /* que la imagen cubra todo */
-  background-position: center;  /* centrada */
-  background-repeat: no-repeat; /* no se repita */
-  height: 100vh;                /* que ocupe toda la pantalla */
-  color: white;                 /* texto claro para contraste */
-  padding: 2rem;
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 }
 
-
-/* 📱 Mobile adjustments */
+/* Responsive */
 @media (max-width: 768px) {
   .info-container {
-    position: absolute;
-    bottom: 50%; /* ⬆️ Mueve el contenedor más arriba (antes estaba en 5%) */
-    left: 5%;
-    right: 5%;
-    padding: 1rem;
-    text-align: center;
+    top: auto;
+    bottom: 10%;
+    transform: translateX(-50%);
+    padding: 1.5rem;
+    width: 90%;
   }
 
-  .info-title {
-    font-size: 2rem; /* 🔠 Un poco más grande */
+  .info-container h1 {
+    font-size: 2rem;
   }
 
   .subtitle {
-    font-size: 1.1rem; /* 🔠 Un poco más grande */
+    font-size: 1rem;
   }
 
   .portfolio-button {
-    font-size: 1rem; /* ⬆️ Más grande */
-    padding: 0.8rem 1.5rem; /* ⬆️ Más relleno */
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
   }
 }
