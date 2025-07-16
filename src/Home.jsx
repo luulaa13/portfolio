@@ -9,6 +9,7 @@ function Band({ maxSpeed = 50, minSpeed = 10, isMobile }) {
   const [dragged, drag] = useState(false)
   const [hovered, hover] = useState(false)
 
+  
   // Rotación inicial para móviles
   useEffect(() => {
     if (isMobile && card.current) {
