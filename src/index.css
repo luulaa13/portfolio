@@ -99,7 +99,6 @@ h1 {
     top: auto;
     bottom: 50%;
     transform: translateX(-50%);
-    padding: 1.2rem;
     width: 90%;
   }
 
@@ -109,8 +108,8 @@ h1 {
 
   .info-container h1 {
     font-size: 2rem;
-    white-space: normal;
     line-height: 1.2;
+    white-space: nowrap; /* Evita que el texto haga salto de línea */
   }
 
   .info-container .subtitle {
