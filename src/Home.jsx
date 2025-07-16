@@ -1,48 +1,3 @@
-import * as THREE from 'three'
-import { useEffect, useRef, useState } from 'react'
-import { Canvas, extend, useThree, useFrame } from '@react-three/fiber'
-import { useGLTF, useTexture, Environment, Lightformer, Text } from '@react-three/drei'
-import { BallCollider, CuboidCollider, Physics, RigidBody, useRopeJoint, useSphericalJoint } from '@react-three/rapier'
-import { MeshLineGeometry, MeshLineMaterial } from 'meshline'
-import { Link } from 'react-router-dom'
-import tagModel from './assets/scene.glb'
-import bandTexture from './assets/bandd.png'
-
-extend({ MeshLineGeometry, MeshLineMaterial })
-useGLTF.preload(tagModel)
-useTexture.preload(bandTexture)
-
-export default function App() {
-  const isMobile = window.innerWidth <= 768
- 
-  
-  return (
-    <>
-      <Canvas camera={{ position: isMobile ? [0, 0, 15] : [0, 0, 13], fov: 25 }}>
-        <ambientLight intensity={Math.PI} />
-        <Physics interpolate gravity={[0, -40, 0]} timeStep={1 / 60}>
-          <Band isMobile={isMobile} />
-        </Physics>
-        <Environment background blur={0.75}>
-          <color attach="background" args={['black']} />
-          <Lightformer intensity={2} color="white" position={[0, -1, 5]} rotation={[0, 0, Math.PI / 3]} scale={[100, 0.1, 1]} />
-          <Lightformer intensity={3} color="white" position={[-1, -1, 1]} rotation={[0, 0, Math.PI / 3]} scale={[100, 0.1, 1]} />
-          <Lightformer intensity={3} color="white" position={[1, 1, 1]} rotation={[0, 0, Math.PI / 3]} scale={[100, 0.1, 1]} />
-          <Lightformer intensity={10} color="white" position={[-10, 0, 14]} rotation={[0, Math.PI / 2, Math.PI / 3]} scale={[100, 10, 1]} />
-        </Environment>
-      </Canvas>
-
-      <div className="info-container">
-        <h1 className="info-title">Hola, soy Lucía</h1>
-        <p className="subtitle">Software Developer & UX/UI Designer</p>
-        <Link to="/portfolio" className="portfolio-button">
-          Ver portfolio
-        </Link>
-      </div>
-    </>
-  )
-}
-
 function Band({ maxSpeed = 50, minSpeed = 10, isMobile }) {
   const band = useRef(), fixed = useRef(), j1 = useRef(), j2 = useRef(), j3 = useRef(), card = useRef()
   const vec = new THREE.Vector3(), ang = new THREE.Vector3(), rot = new THREE.Vector3(), dir = new THREE.Vector3()
@@ -53,20 +8,20 @@ function Band({ maxSpeed = 50, minSpeed = 10, isMobile }) {
   const [curve] = useState(() => new THREE.CatmullRomCurve3([new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3()]))
   const [dragged, drag] = useState(false)
   const [hovered, hover] = useState(false)
-   const cardRotation = isMobile ? [0.1, Math.PI, 0] : [0, Math.PI, 0];
+
+  // Rotación inicial para móviles
+  useEffect(() => {
+    if (isMobile && card.current) {
+      // Quaternion para rotar 180° en Y: (x=0, y=1, z=0, w=0)
+      card.current.setRotation({ x: 0, y: 1, z: 0, w: 0 }, true)
+    }
+  }, [isMobile])
 
   useRopeJoint(fixed, j1, [[0, 0, 0], [0, 0, 0], 1])
   useRopeJoint(j1, j2, [[0, 0, 0], [0, 0, 0], 1])
   useRopeJoint(j2, j3, [[0, 0, 0], [0, 0, 0], 1])
   useSphericalJoint(j3, card, [[0, 0, 0], [0, 1.45, 0]])
 
-  useEffect(() => {
-  if (isMobile && card.current) {
-    // Aplicamos rotación inicial de 180° en el eje Y
-    card.current.setRotation({ x: 0, y: 1, z: 0, w: 0 }); // Quaternion para 180° en Y
-  }
-}, [isMobile]);
-  
   useEffect(() => {
     if (hovered) {
       document.body.style.cursor = dragged ? 'grabbing' : 'grab'
@@ -105,6 +60,8 @@ function Band({ maxSpeed = 50, minSpeed = 10, isMobile }) {
   curve.curveType = 'chordal'
   texture.wrapS = texture.wrapT = THREE.RepeatWrapping
 
+  const cardRotation = [0, Math.PI, 0] // visual rotation for mesh
+
   return (
     <>
       <group position={[isMobile ? 1.2 : 1.5, isMobile ? 3.5 : 4, 0]}>
@@ -118,13 +75,7 @@ function Band({ maxSpeed = 50, minSpeed = 10, isMobile }) {
         <RigidBody position={[1.5, 0, 0]} ref={j3} {...segmentProps}>
           <BallCollider args={[0.1]} />
         </RigidBody>
-        <RigidBody
-  position={[2, 0, 0]}
-  rotation={isMobile ? [0, Math.PI, 0] : [0, 0, 0]}
-  ref={card}
-  {...segmentProps}
-  type={dragged ? 'kinematicPosition' : 'dynamic'}
->
+        <RigidBody position={[2, 0, 0]} ref={card} {...segmentProps} type={dragged ? 'kinematicPosition' : 'dynamic'}>
           <CuboidCollider args={[0.8, 1.125, 0.01]} />
           <group
             scale={isMobile ? 2.2 : 2.25}
@@ -150,7 +101,7 @@ function Band({ maxSpeed = 50, minSpeed = 10, isMobile }) {
           </group>
         </RigidBody>
       </group>
-      
+
       <mesh ref={band}>
         <meshLineGeometry />
         <meshLineMaterial color="white" depthTest={false} resolution={[width, height]} useMap map={texture} repeat={[-3, 1]} lineWidth={1} />
