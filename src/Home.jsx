@@ -26,7 +26,7 @@ export default function App() {
 
   return (
     <>
-      <Canvas camera={{ position: isMobile ? [0, 0, 17] : [0, 0, 13], fov: 25 }}>
+      <Canvas camera={{ position: isMobile ? [0, 0, 17] : [0, 0, 10], fov: 30 }}>
         <ambientLight intensity={Math.PI} />
         <Physics interpolate gravity={[0, -40, 0]} timeStep={1 / 60}>
           <Band isMobile={isMobile} />
@@ -59,7 +59,9 @@ function Band({ maxSpeed = 50, minSpeed = 10, isMobile }) {
   const [curve] = useState(() => new THREE.CatmullRomCurve3([new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3()]))
   const [dragged, drag] = useState(false)
   const [hovered, hover] = useState(false)
-
+ const { width } = useThree()
+  const scale = width < 768 ? 2.2 : 3.5
+  
   useRopeJoint(fixed, j1, [[0, 0, 0], [0, 0, 0], isMobile ? 0.5 : 1])
   useRopeJoint(j1, j2, [[0, 0, 0], [0, 0, 0], isMobile ? 0.5 : 1])
   useRopeJoint(j2, j3, [[0, 0, 0], [0, 0, 0], isMobile ? 0.5 : 1])
@@ -112,7 +114,7 @@ function Band({ maxSpeed = 50, minSpeed = 10, isMobile }) {
         <RigidBody position={[2, 0, 0]} ref={card} {...segmentProps} type={dragged ? 'kinematicPosition' : 'dynamic'}>
           <CuboidCollider args={[isMobile ? 0.5 : 0.8, isMobile ? 0.8 : 1.125, 0.01]} />
           <group
-            scale={isMobile ? 1.8 : 2.25}
+            scale={scale}
             position={[0, isMobile ? -1.5 : -1.2, -0.05]}
             rotation={[0, Math.PI, 0]}
             onPointerOver={() => hover(true)}
