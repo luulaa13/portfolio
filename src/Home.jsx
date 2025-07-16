@@ -32,14 +32,14 @@ export default function App() {
         </Environment>
       </Canvas>
 
-      <div className="info-container">
+      <main className="info-container">
        <p className="intro">Hi! I'm</p>
         <h1>Lucia Garcia</h1>
         <p className="subtitle">Software Developer & UX/UI Designer</p>
         <Link to="/portfolio" className="portfolio-button">
           Ver portfolio
         </Link>
-      </div>
+      </main>
     </>
   )
 }
