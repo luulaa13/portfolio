@@ -81,30 +81,24 @@ h1 {
 }
 
 
-/* Responsive */
-@media (max-width: 768px) {
-  .info-container {
-    top: auto;
-    bottom: 50%;
-    transform: translateX(-50%);
-    padding: 1.5rem;
-    width: 90%;
+ .info-container .intro {
+    font-size: 1rem;
   }
 
-   h1 {
-    font-size: 3rem;
-    white-space: nowrap;
-  }
-  .intro{
-     font-size: 2rem;
+  .info-container h1 {
+    font-size: 1.6rem;
+    white-space: normal;
+    line-height: 1.2;
   }
 
-  .subtitle {
-    font-size: 2rem;
+  .info-container .subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
   }
 
-  .portfolio-button {
-    font-size: 0.95rem;
-    padding: 0.6rem 1.2rem;
+  .info-container .portfolio-button {
+    font-size: 1rem;
+    padding: 0.8rem 1.4rem;
+    border-radius: 999px;
   }
 }
