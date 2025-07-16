@@ -133,6 +133,7 @@ const initialRotation = isMobile
           <group
             scale={isMobile ? 2.2 : 2.25}
             position={[0, -1.2, -0.05]}
+            rotation={[0, Math.PI, 0]} // <- esto voltea la tarjeta
             onPointerOver={() => hover(true)}
             onPointerOut={() => hover(false)}
             onPointerUp={(e) => (e.target.releasePointerCapture(e.pointerId), drag(false))}
