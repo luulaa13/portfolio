@@ -131,3 +131,11 @@ h1 {
   align-items: center;
   text-align: center;
 }
+
+@media (min-width: 1024px) {
+  .portfolio-container {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
