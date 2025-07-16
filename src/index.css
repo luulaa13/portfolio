@@ -86,8 +86,8 @@ body {
 /* 📱 Mobile adjustments */
 @media (max-width: 768px) {
   .info-container {
-    top: auto;
-    bottom: 5%;
+    position: absolute;
+    bottom: 15%; /* ⬆️ Mueve el contenedor más arriba (antes estaba en 5%) */
     left: 5%;
     right: 5%;
     padding: 1rem;
@@ -95,15 +95,15 @@ body {
   }
 
   .info-title {
-    font-size: 1.75rem;
+    font-size: 2rem; /* 🔠 Un poco más grande */
   }
 
   .subtitle {
-    font-size: 1rem;
+    font-size: 1.1rem; /* 🔠 Un poco más grande */
   }
 
   .portfolio-button {
-    font-size: 0.9rem;
-    padding: 0.6rem 1.2rem;
+    font-size: 1rem; /* ⬆️ Más grande */
+    padding: 0.8rem 1.5rem; /* ⬆️ Más relleno */
   }
 }
