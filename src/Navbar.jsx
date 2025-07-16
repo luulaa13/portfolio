@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo">Lucía</div>
+     
 
       <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
         <a href="#proyectos">Proyectos</a>
