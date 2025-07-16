@@ -80,17 +80,6 @@ h1 {
   color: #0056b3;
 }
 
-/* styles.css */
-.portfolio-container {
-  background-color: #fff;
-  background-image: url('./assets/portfolio.png'); /* puede ser relativa a /public o una url */
-  background-size: cover;       /* que la imagen cubra todo */
-  background-position: center;  /* centrada */
-  background-repeat: no-repeat; /* no se repita */
-  height: 100vh;                /* que ocupe toda la pantalla */
-  color: white;                 /* texto claro para contraste */
-  padding: 2rem;
-}
 
 
 /* Responsive */
@@ -124,3 +113,38 @@ h1 {
   }
 }
 
+
+
+.portfolio-container {
+  background-color: #fff;
+  background-image: url('./assets/portfolio.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+/* Responsive para tablets */
+@media (max-width: 768px) {
+  .portfolio-container {
+    padding: 1.5rem;
+  }
+
+}
+
+/* Responsive para móviles */
+@media (max-width: 480px) {
+  .portfolio-container {
+    padding: 1rem;
+  }
+
+}
