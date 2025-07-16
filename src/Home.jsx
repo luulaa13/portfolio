@@ -61,6 +61,13 @@ function Band({ maxSpeed = 50, minSpeed = 10, isMobile }) {
   useSphericalJoint(j3, card, [[0, 0, 0], [0, 1.45, 0]])
 
   useEffect(() => {
+  if (isMobile && card.current) {
+    // Aplicamos rotación inicial de 180° en el eje Y
+    card.current.setRotation({ x: 0, y: 1, z: 0, w: 0 }); // Quaternion para 180° en Y
+  }
+}, [isMobile]);
+  
+  useEffect(() => {
     if (hovered) {
       document.body.style.cursor = dragged ? 'grabbing' : 'grab'
       return () => void (document.body.style.cursor = 'auto')
