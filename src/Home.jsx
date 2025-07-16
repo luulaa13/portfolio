@@ -105,10 +105,7 @@ function Band({ maxSpeed = 50, minSpeed = 10, isMobile }) {
   curve.curveType = 'chordal'
   texture.wrapS = texture.wrapT = THREE.RepeatWrapping
 
-  // Cuaternión para 180° en Y
-const initialRotation = isMobile
-  ? { x: 0, y: 1, z: 0, w: 0 } // Quaternion for 180º Y
-  : undefined
+
   return (
     <>
       <group position={[isMobile ? 1.2 : 1.5, isMobile ? 3.5 : 4, 0]}>
@@ -127,7 +124,6 @@ const initialRotation = isMobile
   {...segmentProps}
   type={dragged ? 'kinematicPosition' : 'dynamic'}
   position={[2, 0, 0]}
-  rotation={initialRotation}
 >
           <CuboidCollider args={[0.8, 1.125, 0.01]} />
           <group
