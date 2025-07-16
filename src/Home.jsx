@@ -111,7 +111,13 @@ function Band({ maxSpeed = 50, minSpeed = 10, isMobile }) {
         <RigidBody position={[1.5, 0, 0]} ref={j3} {...segmentProps}>
           <BallCollider args={[0.1]} />
         </RigidBody>
-        <RigidBody position={[2, 0, 0]} ref={card} {...segmentProps} type={dragged ? 'kinematicPosition' : 'dynamic'}>
+        <RigidBody
+  position={[2, 0, 0]}
+  rotation={isMobile ? [0, Math.PI, 0] : [0, 0, 0]}
+  ref={card}
+  {...segmentProps}
+  type={dragged ? 'kinematicPosition' : 'dynamic'}
+>
           <CuboidCollider args={[0.8, 1.125, 0.01]} />
           <group
             scale={isMobile ? 2.2 : 2.25}
