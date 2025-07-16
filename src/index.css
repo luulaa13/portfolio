@@ -81,3 +81,29 @@ body {
   color: white;                 /* texto claro para contraste */
   padding: 2rem;
 }
+
+
+/* 📱 Mobile adjustments */
+@media (max-width: 768px) {
+  .info-container {
+    top: auto;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .info-title {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .portfolio-button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
