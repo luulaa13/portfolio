@@ -21,7 +21,7 @@ const Navbar = () => {
     <>
       <nav className={`navbar ${menuOpen ? 'hidden-navbar' : ''}`}>
         <div className="navbar__logo">
-          <img src="/src/assets/logo.png" alt="Logo" className="logo-image" />
+          <img src="../src/assets/logo.png" alt="Logo" className="logo-image" />
         </div>
 
         <div className="theme-switch">
