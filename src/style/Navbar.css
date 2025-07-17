@@ -2,8 +2,11 @@
 .hidden-navbar {
     visibility: hidden;
   }
-
   .navbar {
+    height: 70px; /* o 80px */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
@@ -11,9 +14,6 @@
     height: 60px;
     background-color: var(--bg);
     color: var(--text);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 0 1.5rem;
     z-index: 1000; /* debajo de la cortina */
   }

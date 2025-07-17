@@ -1,16 +1,29 @@
 import Navbar from './Navbar.jsx'
-import Newsletter from './Newsletter.jsx'
 import '../src/style/Portfolio.css' // Importamos el CSS externo
 import React from 'react'
+import  MovingBanner from './MovingBanner.jsx'
 
 const Portfolio = () => {
   return (
     <div className="portfolio-container">
       <Navbar />
-      <section id="about">
+      <section id="inicio" className="section">
+        <MovingBanner/>
+      </section>
+
+      <section id="proyectos" className="section">
        
       </section>
-      <section id="newsletter" className="newsletter-section">
+
+      <section id="sobre-mi" className="section">
+       
+      </section>
+
+      <section id="newsletter" className="section">
+        
+      </section>
+
+      <section id="contacto" className="section">
        
       </section>
 
