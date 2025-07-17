@@ -9,7 +9,6 @@ body {
     border-top: 1px solid #4d4f3e;
     padding: 1rem 0;
     box-sizing: border-box;
-    margin-top: 690px; /* o el valor que quieras */
   }
   
   .moving-banner {
@@ -24,7 +23,7 @@ body {
   /* Responsive: ajustamos el tamaño de la fuente para pantallas pequeñas */
 @media (max-width: 600px) {
   .moving-banner-wrapper {
-    margin-top: 400px; /* o el valor que quieras */
+    margin-top: 500px; /* o el valor que quieras */
   }
 
 }

@@ -7,7 +7,8 @@ const Portfolio = () => {
   return (
     <div className="portfolio-container">
       <Navbar />
-      <section id="inicio" className="section">
+      <section id="inicio" className="hero-section">
+        <h1>HOLA, SOY LUCIA</h1>
         <MovingBanner/>
       </section>
 
