@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import '../src/style/Navbar.css'
+import logo from '../src/assets/logo.png';
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false)
@@ -21,7 +22,7 @@ const Navbar = () => {
     <>
       <nav className={`navbar ${menuOpen ? 'hidden-navbar' : ''}`}>
         <div className="navbar__logo">
-          <img src="../src/assets/logo.png" alt="Logo" className="logo-image" />
+          <img src={logo} alt="Logo" className="logo-image" />
         </div>
 
         <div className="theme-switch">
