@@ -1,0 +1,198 @@
+/* Oculta el navbar debajo de la cortina */
+.hidden-navbar {
+    visibility: hidden;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    z-index: 1000; /* debajo de la cortina */
+  }
+  
+  /* Cortina superior con bordes redondeados */
+  .dropdown-curtain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #4d4f3e;
+    color: var(--text);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    overflow: hidden;
+    z-index: 9999; /* Súbelo bien alto */
+    transition: height 0.4s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdown-curtain.open {
+    height: 90vh; /* solo baja hasta el 70% */
+  }
+  
+  /* Contenido centrado */
+  .dropdown-curtain ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .dropdown-curtain a {
+    font-size: 80px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Spectral Bridge', serif !important;
+  }
+
+  /* Hover: cambio color y leve escala */
+.dropdown-curtain a:hover {
+    color: #000000;
+    transform: scale(1.05);
+  }
+  
+  /* Hover: subrayado animado */
+  .dropdown-curtain a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #000000;
+    transition: width 0.3s ease;
+  }
+  
+  .dropdown-curtain a:hover::after,
+  .dropdown-curtain a.active::after {
+    width: 100%;
+  }
+  
+  /* Enlace activo: color destacado */
+  .dropdown-curtain a.active {
+    color: #000000;
+  }
+  
+  /* Adaptación para móviles */
+  @media (max-width: 600px) {
+    .dropdown-curtain a {
+      font-size: 40px;
+    }
+  }
+  
+  /* Logo */
+  .logo-image {
+    height: 60px;
+  }
+  
+  /* Tema claro/oscuro */
+  :root {
+    --bg: #f6f7e4 ;
+    --text: #000;
+    --switch: #4d4f3e;
+  }
+  
+  .dark-mode {
+    --bg: #121212;
+    --text: #fff;
+    --switch: #fff;
+  }
+  
+  /* Hamburguesa */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    width: 35px;
+    height: 4px;
+    background-color: var(--text);
+    border-radius: 2px;
+  }
+  
+  .theme-switch {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Ocultar el input */
+  .switch input {
+    display: none;
+  }
+  
+  /* Switch container (solo borde, sin fondo) */
+  .switch .track {
+    width: 90px;
+    height: 40px;
+    border: 1px solid var(--switch);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6px;
+    box-sizing: border-box;
+    background-color: transparent;
+  }
+  
+  /* Iconos dentro del switch */
+  .switch-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--switch);
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Icono activo con fondo */
+  .switch-icon.active {
+    background-color: var(--switch);
+    color: #f6f7e4;
+  }
+  
+  .backdrop {
+    position: fixed;
+    top: 70vh; /* justo debajo de la cortina */
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    z-index: 1999;
+  }
+ 
+  .close-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+.close-button:hover{
+    color: #000000;
+}
+
