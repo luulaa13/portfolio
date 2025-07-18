@@ -2,6 +2,7 @@ body {
   overflow-x: hidden;
 }
 .moving-banner-wrapper {
+    margin-top: 100px;
     position: relative;
     width: 100vw; /* Ancho total de la ventana */
     overflow: hidden;
@@ -23,7 +24,7 @@ body {
   /* Responsive: ajustamos el tamaño de la fuente para pantallas pequeñas */
 @media (max-width: 600px) {
   .moving-banner-wrapper {
-    margin-top: 500px; /* o el valor que quieras */
+    margin-top: 400px; /* o el valor que quieras */
   }
 
 }

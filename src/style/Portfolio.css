@@ -1,12 +1,14 @@
   /* Tema claro/oscuro */
   :root {
-    --bg: #f6f7e4 ;
+    --bg: #eae7d6 ;
     --text: #000;
+    --switch: #4d4f3e;
   }
   
   .dark-mode {
     --bg: #121212;
     --text: #fff;
+        --switch: #4d4f3e;
   }
 
 
@@ -32,19 +34,92 @@
     }
   }
   
- 
-  .hero-section h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    color:var(--text);
-    font-size: 100px;
-    text-transform: uppercase; /* opcional, para forzar mayúsculas */
-    font-weight: bold;
+  .hero-section {
+    position: relative;
+    padding: 4rem 2rem 6rem; /* solo laterales equilibrados */
+    
   }
   
-  @media (max-width: 600px) {
-    .hero-section h1 {
-      font-size: 36px;
-      letter-spacing: 0.1em;
-      text-align: center;
+  .hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* por si estás en mobile */
+    margin-top:100px;
+    color: var(--text);
+  }
+  
+  .hero-text {
+   color: var(--text);
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  .hero-text h1{
+    font-size: 100px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 0.2em; /* más preciso que 2px */
+
+  }
+
+  .hero-subtitle{
+    margin-top: 0; /* elimina espacio extra */
+    font-size: 50px;
+    max-width: 750px; /* o el valor que se ajuste bien */   
+  }
+
+  .hero-buttons {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .scroll-down-arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .hero-btn {
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .hero-btn.primary {
+    background-color: var(--switch);
+    color: white;
+  }
+  
+  .hero-btn.secondary {
+    background-color: transparent;
+    border: 2px solid var(--switch);
+    color: var(--switch);
+  }
+  
+
+  .scroll-down-arrow {
+    margin-top: 2rem;
+    animation: bounce 2s infinite;
+    display: flex;
+    justify-content: center;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(6px);
     }
   }
+  
+  .scroll-down-arrow svg {
+    color: #4d4f3e;
+    width: 40px;      /* Aumenta tamaño horizontal */
+    height: 40px;     /* Aumenta tamaño vertical */
+  }
+  
