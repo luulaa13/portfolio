@@ -1,7 +1,9 @@
 
   .animated-text {
+
     font-family: 'Bebas Neue', sans-serif;
     font-size: 4rem;
+    margin-top:5px;
     margin-bottom: 2rem;
     color: #ff6600 /* Por ejemplo, un color llamativo */
   }
