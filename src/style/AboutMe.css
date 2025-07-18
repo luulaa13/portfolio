@@ -1,0 +1,33 @@
+.aboutme-section {
+    position: relative;
+    overflow: visible;
+    height: 100vh;
+    width: 100vw;
+    align-items: flex-start;  /* Cambiado a flex-start para subir */
+    padding-top: 4rem;        /* Espacio desde arriba */
+    display: flex;
+    justify-content: center;
+    font-family: "Bebas Neue", cursive;
+    color: #ff6600;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .animated-text {
+    font-size: 5rem;
+    position: relative;
+    z-index: 100;
+  }
+
+  @media (max-width: 600px) {
+    .aboutme-section {
+      padding-top: 2rem;
+    }
+  
+    .animated-text {
+      font-size: 2.5rem;  /* más pequeña en móvil */
+      padding: 0 1rem;    /* un poco de margen lateral */
+    }
+  }
+  

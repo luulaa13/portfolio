@@ -2,7 +2,7 @@ body {
   overflow-x: hidden;
 }
 .moving-banner-wrapper {
-    margin-top: 100px;
+    margin-top: 105px;
     position: relative;
     width: 100vw; /* Ancho total de la ventana */
     overflow: hidden;

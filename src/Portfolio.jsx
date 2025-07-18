@@ -1,4 +1,5 @@
 import Navbar from './Navbar.jsx'
+import AboutMe from './AboutMe.jsx'
 import '../src/style/Portfolio.css' // Importamos el CSS externo
 import React from 'react'
 import  MovingBanner from './MovingBanner.jsx'
@@ -50,13 +51,14 @@ const Portfolio = () => {
       </section>
       <MovingBanner/>
 
+        <AboutMe/>
+     
+
       <section id="proyectos" className="section">
        
       </section>
 
-      <section id="sobre-mi" className="section">
-       
-      </section>
+     
 
       <section id="newsletter" className="section">
         
