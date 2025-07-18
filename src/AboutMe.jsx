@@ -76,6 +76,19 @@ const AboutMe = () => {
       que no solo se vean muy bien, sino que también funcionen a la perfección para el usuario.
       Creo que  el aprendizaje continuo es la clave del éxito, y siempre estoy buscando nuevos desafíos para mantenerme motivada y comprometida.
     </p>
+
+    <div className="scopri-wrapper">
+    <button className="scopri-btn">
+    <div className="text-track">
+      <span className="text">DESCÚBREME&nbsp;&nbsp;</span>
+      <span className="text">DESCÚBREME&nbsp;&nbsp;</span>
+      <span className="text">DESCÚBREME&nbsp;&nbsp;</span>
+    </div>
+  </button>
+  <div className="circle">
+    <span className="plus">+</span>
+  </div>
+</div>
     </section>
   );
 };

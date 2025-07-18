@@ -45,3 +45,97 @@
       line-height: 1.6;
     }
   }
+
+  .scopri-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  .scopri-btn {
+    background: white;
+    border: none;
+    border-radius: 999px;
+    padding: 0.8rem 2.8rem 0.8rem 1.5rem; /* espacio para círculo */
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    width: 130px;
+    height: 48px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .text-track {
+    display: flex;
+    white-space: nowrap;
+    transform: translateX(0);
+    animation: none;
+  }
+
+  .scopri-wrapper:hover .text-track {
+    animation: scroll-text 2s linear infinite;
+  }
+
+  @keyframes scroll-text {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-33.3%);
+    }
+  }
+
+  .text {
+    color: black;
+    display: inline-block;
+    padding-right: 1rem;
+  }
+
+  .circle {
+    position: absolute;
+    right: -2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ff6600;
+    border-radius: 50%;
+    width: 2.8rem;
+    height: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+
+  .plus {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    line-height: 1;
+  }
+
+
+  @media (max-width: 600px) {
+    .scopri-btn {
+      width: 120px; /* ajusta para que quepa un texto entero */
+      padding: 0.6rem 3rem 0.6rem 1rem; /* aumenta el padding derecho para el círculo */
+      font-size: 1.3rem;
+      height: 40px;
+    }
+  
+    .circle {
+      width: 2.2rem;
+      height: 2.2rem;
+      right: -1rem; /* pequeño ajuste para que no se superponga */
+    }
+  
+    .plus {
+      font-size: 1.2rem;
+    }
+  }
+  
