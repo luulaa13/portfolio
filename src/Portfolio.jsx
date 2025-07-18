@@ -38,8 +38,8 @@ const Portfolio = () => {
         </div>
 
         <div className="hero-buttons" ref={buttonsRef}>
-          <a href="#proyectos" className="hero-btn primary">Ver proyectos</a>
           <a href="#about" className="hero-btn secondary">Sobre mí</a>
+          <a href="#proyectos" className="hero-btn primary">Ver proyectos</a>
         </div>
      
         <div className="scroll-down-arrow">

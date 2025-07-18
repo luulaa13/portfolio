@@ -24,7 +24,7 @@ body {
   /* Responsive: ajustamos el tamaño de la fuente para pantallas pequeñas */
 @media (max-width: 600px) {
   .moving-banner-wrapper {
-    margin-top: 100px; /* o el valor que quieras */
+    margin-top: 50px; /* o el valor que quieras */
   }
 
 }
