@@ -8,11 +8,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 const AboutMe = () => {
   const sectionRef = useRef(null);
+  const descriptionRef = useRef(null);
 
   useEffect(() => {
     const q = gsap.utils.selector(sectionRef);
 
     let ctx = gsap.context(() => {
+      // Animación de las palabras
       gsap.from(q(".word"), {
         y: 80,
         opacity: 0,
@@ -23,13 +25,29 @@ const AboutMe = () => {
           trigger: sectionRef.current,
           start: "top 85%",
           toggleActions: "play none none none",
-          once: true,  // <- importante para que se ejecute una sola vez y se quede ahí
+          once: true,
+        },
+      });
+
+      // Animación del párrafo
+      gsap.from(descriptionRef.current, {
+        y: 40,
+        opacity: 0,
+        duration: 2.5,
+        ease: "power2.out",
+        delay: 1.5, // un poco después del título
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 85%",
+          toggleActions: "play none none none",
+          once: true,
         },
       });
     }, sectionRef);
 
-    return () => ctx.revert(); // limpieza al desmontar
+    return () => ctx.revert(); // cleanup
   }, []);
+
 
   const text = ["PERO", "QUIÉN", "ES", "LUCÍA?"];
 
@@ -51,6 +69,13 @@ const AboutMe = () => {
           </span>
         ))}
       </h2>
+      <p className="aboutme-description" ref={descriptionRef}>
+      Como diseñadora UX/UI  y desarroladora con sede en Madrid, 
+      puedo combinar mi amor por la tecnología con mi pasión por el arte y el diseño.
+      Disfruto usando mi creatividad y mis habilidades de resolución de problemas para crear experiencias digitales 
+      que no solo se vean muy bien, sino que también funcionen a la perfección para el usuario.
+      Creo que  el aprendizaje continuo es la clave del éxito, y siempre estoy buscando nuevos desafíos para mantenerme motivada y comprometida.
+    </p>
     </section>
   );
 };
