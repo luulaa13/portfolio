@@ -16,32 +16,32 @@
     font-family: 'Bebas Neue', cursive;
   }
 
-  @media (max-width: 600px) {
-    .aboutme-section {
-      padding-top: 2rem;
-    }
-  
-    .animated-text {
-      font-size: 2.5rem;  /* más pequeña en móvil */
-      padding: 0 1rem;    /* un poco de margen lateral */
-    }
-  }
-  
-
-  /* Estilos para pantallas pequeñas */
+/* Media query para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
+    .animated-text {
+      font-size: 2.8rem;
+      margin-top: 2rem;
+    }
+  
     .aboutme-description {
-      font-size: 1rem;
-      line-height: 1.6;
+      font-size: 1.1rem;
+      line-height: 1.7;
       padding: 0 1.5rem;
       margin-top: 1.5rem;
-      text-align: left; /* o center si lo prefieres */
+      text-align: left;
     }
   }
   
+  /* Para móviles más pequeños aún */
   @media (max-width: 480px) {
+    .animated-text {
+      font-size: 2.2rem;
+      margin-top: 1.5rem;
+    }
+  
     .aboutme-description {
-      font-size: 0.95rem;
+      font-size: 1rem;
       padding: 0 1rem;
+      line-height: 1.6;
     }
   }
