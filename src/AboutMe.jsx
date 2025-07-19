@@ -70,19 +70,20 @@ const AboutMe = () => {
         ))}
       </h2>
       <p className="aboutme-description" ref={descriptionRef}>
-      Como diseñadora UX/UI  y desarroladora con sede en Madrid, 
-      puedo combinar mi amor por la tecnología con mi pasión por el arte y el diseño.
-      Disfruto usando mi creatividad y mis habilidades de resolución de problemas para crear experiencias digitales 
-      que no solo se vean muy bien, sino que también funcionen a la perfección para el usuario.
-      Creo que  el aprendizaje continuo es la clave del éxito, y siempre estoy buscando nuevos desafíos para mantenerme motivada y comprometida.
+      Soy diseñadora UX/UI  y desarroladora con sede en Madrid, 
+      Me apasiona unir mi amor por la tecnología con mi pasión por el arte y el diseño para crear experiencias 
+      digitales que no solo se vean bien, sino que realmente funcionen para las personas.
+      Me encanta resolver problemas, aprender constantemente y enfrentar nuevos retos que me mantengan motivada.
+      Diseño con propósito, buscando siempre mejorar la vida digital de quíenes usan mis productos.
+     
     </p>
 
     <div className="scopri-wrapper">
     <button className="scopri-btn">
     <div className="text-track">
-      <span className="text">DESCÚBREME&nbsp;&nbsp;</span>
-      <span className="text">DESCÚBREME&nbsp;&nbsp;</span>
-      <span className="text">DESCÚBREME&nbsp;&nbsp;</span>
+      <span className="text">CONOCEME MEJOR&nbsp;&nbsp;</span>
+      <span className="text">CONOCEME MEJOR&nbsp;&nbsp;</span>
+      <span className="text">CONOCEME MEJOR&nbsp;&nbsp;</span>
     </div>
   </button>
   <div className="circle">

@@ -1,9 +1,8 @@
 
   .animated-text {
-
     font-family: 'Bebas Neue', sans-serif;
     font-size: 4rem;
-    margin-top:5px;
+    margin-top:-20px;
     margin-bottom: 2rem;
     color: #ff6600 /* Por ejemplo, un color llamativo */
   }
@@ -13,14 +12,13 @@
     font-size: 26px;
     line-height: 1.6;
     color: var(--text);
-    font-family: 'Bebas Neue', cursive;
   }
 
 /* Media query para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
     .animated-text {
       font-size: 2.8rem;
-      margin-top: 2rem;
+      margin-top: -20px;
     }
   
     .aboutme-description {
@@ -55,7 +53,7 @@
     background: white;
     border: none;
     border-radius: 999px;
-    padding: 0.8rem 2.8rem 0.8rem 1.5rem; /* espacio para círculo */
+    padding: 15px; /* espacio para círculo */
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.4rem;
     cursor: pointer;
@@ -65,7 +63,7 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
-    width: 130px;
+    width: 155px;
     height: 48px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
@@ -122,10 +120,11 @@
 
   @media (max-width: 600px) {
     .scopri-btn {
-      width: 120px; /* ajusta para que quepa un texto entero */
+      width: 150px; /* ajusta para que quepa un texto entero */
       padding: 0.6rem 3rem 0.6rem 1rem; /* aumenta el padding derecho para el círculo */
       font-size: 1.3rem;
       height: 40px;
+      margin-top: 50px;
     }
   
     .circle {

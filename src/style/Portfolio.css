@@ -156,7 +156,7 @@
   position: relative;    /* importante para z-index */
   overflow: visible;     /* que no corte nada */
   background-color: var(--about-bg);
-  height: 80vh;
+  height: 100vh;
   width: 100vw;           /* ✅ fuerza ancho total de pantalla */
   display: flex;
   align-items: center;  /* Cambiado a flex-start para subir */
