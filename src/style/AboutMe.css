@@ -45,6 +45,7 @@
   }
 
   .scopri-wrapper {
+    margin-top: 30px;
     position: relative;
     display: inline-block;
   }
@@ -119,12 +120,14 @@
 
 
   @media (max-width: 600px) {
+    .scopri-wrapper{
+      margin-top: 30px;
+    }
     .scopri-btn {
       width: 150px; /* ajusta para que quepa un texto entero */
       padding: 0.6rem 3rem 0.6rem 1rem; /* aumenta el padding derecho para el círculo */
       font-size: 1.3rem;
       height: 40px;
-      margin-top: 50px;
     }
   
     .circle {
