@@ -14,10 +14,9 @@ const Navbar = () => {
         <div className="navbar__logo">
           <img src={logo} alt="Logo" className="logo-image" />
         </div>
+ {/* Eliminado el switch de tema */}
 
-        {/* Eliminado el switch de tema */}
-
-        <div className="navbar__menu" onClick={toggleMenu}>
+ <div className="navbar__menu" onClick={toggleMenu}>
           <div className="hamburger">
             <span></span>
             <span></span>
