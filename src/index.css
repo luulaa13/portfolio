@@ -87,9 +87,9 @@ h1 {
 @media (max-width: 768px) {
   .info-container {
     top: auto;
-    bottom: 30%;
+    bottom: 50%;
     transform: translateX(-50%);
-    width: 90%;
+    width: 100%;
   }
 
   .info-container .intro {
