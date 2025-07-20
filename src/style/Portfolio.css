@@ -1,22 +1,7 @@
-  /* Tema claro/oscuro */
-  :root {
-    --bg: #eae7d6 ;
-    --text: #000;
-    --switch: #4d4f3e;
-    --about-bg: #cfc9aa;
- 
-  }
-  
-  .dark-mode {
-    --bg: #121212;
-    --text: #fff;
-    --switch: #4d4f3e;
-    --about-bg: #3b3e2f;
-  }
 
 
 .portfolio-container {
-    background-color: var(--bg);
+    background-color: #121212;
     background-position: center;
     background-attachment: fixed;  /* efecto parallax suave */
     min-height: 100vh;
@@ -49,7 +34,7 @@
     align-items: center;
     flex-wrap: wrap; /* por si estás en mobile */
     margin-top:100px;
-    color: var(--text);
+    color: white;
   }
   
   .hero-text {
@@ -87,14 +72,14 @@
   }
   
   .hero-btn.primary {
-    background-color: var(--switch);
+    background-color: #4d4f3e;
     color: white;
   }
   
   .hero-btn.secondary {
     background-color: transparent;
-    border: 2px solid var(--switch);
-    color: var(--switch);
+    border: 2px solid #4d4f3e;
+    color: #4d4f3e;
   }
   
 
@@ -155,7 +140,7 @@
 .aboutme-section {
   position: relative;    /* importante para z-index */
   overflow: visible;     /* que no corte nada */
-  background-color: var(--about-bg);
+  background-color: #4d4f3e;
   height: 100vh;
   width: 100vw;           /* ✅ fuerza ancho total de pantalla */
   display: flex;

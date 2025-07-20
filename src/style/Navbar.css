@@ -18,75 +18,81 @@
     z-index: 1000; /* debajo de la cortina */
   }
   
-  /* Cortina superior con bordes redondeados */
   .dropdown-curtain {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 0;
-    background-color: #4d4f3e;
-    color: white;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
+    background-color: #800020;
     overflow: hidden;
-    z-index: 9999; /* Súbelo bien alto */
-    transition: height 0.4s ease;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: opacity 0.6s ease, transform 0.6s ease, height 0.6s ease;
   }
   
   .dropdown-curtain.open {
-    height: 90vh; /* solo baja hasta el 70% */
+    height: 100vh;
+    opacity: 1;
+    transform: translateY(0);
   }
   
-  /* Contenido centrado */
+
   .dropdown-curtain ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    text-align: center;
   }
   
-  .dropdown-curtain a {
-    font-size: 80px;
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Spectral Bridge', serif !important;
+  .dropdown-curtain li {
+    margin: 20px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
   }
+  
+  .dropdown-curtain.open li {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .dropdown-curtain.open li:nth-child(1) { transition-delay: 0.2s; }
+  .dropdown-curtain.open li:nth-child(2) { transition-delay: 0.3s; }
+  .dropdown-curtain.open li:nth-child(3) { transition-delay: 0.4s; }
+  .dropdown-curtain.open li:nth-child(4) { transition-delay: 0.5s; }
+  .dropdown-curtain.open li:nth-child(5) { transition-delay: 0.6s; }
 
-  /* Hover: cambio color y leve escala */
+@keyframes fadeInMenu {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInItem {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-curtain a {
+  font-family: 'Spectral Bridge', serif !important;
+  color: white;
+  font-size: 64px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
 .dropdown-curtain a:hover {
-    color: #000000;
-    transform: scale(1.05);
-  }
-  
-  /* Hover: subrayado animado */
-  .dropdown-curtain a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -5px;
-    left: 0;
-    background-color: #000000;
-    transition: width 0.3s ease;
-  }
-  
-  .dropdown-curtain a:hover::after,
-  .dropdown-curtain a.active::after {
-    width: 100%;
-  }
-  
-  /* Enlace activo: color destacado */
-  .dropdown-curtain a.active {
-    color: #000000;
-  }
-  
+  color: #000000;
+}
+
   /* Adaptación para móviles */
   @media (max-width: 600px) {
     .dropdown-curtain a {
@@ -157,15 +163,6 @@
     color: #f6f7e4;
   }
   
-  .backdrop {
-    position: fixed;
-    top: 70vh; /* justo debajo de la cortina */
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: transparent;
-    z-index: 1999;
-  }
  
   .close-button {
     position: absolute;
