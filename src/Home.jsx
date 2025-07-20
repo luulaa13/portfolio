@@ -33,11 +33,10 @@ export default function App() {
       </Canvas>
 
       <main className="info-container">
-       <p className="intro">Hi! I'm</p>
-        <h1>Lucia Garcia</h1>
-        <p className="subtitle">Software Developer & UX/UI Designer</p>
+       <p className="intro">BIENVENIDO</p>
+        <h1>AL BACKSTAGE</h1>
         <Link to="/portfolio" className="portfolio-button">
-          Ver portfolio
+         ACCEDER
         </Link>
       </main>
     </>

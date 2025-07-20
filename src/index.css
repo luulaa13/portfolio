@@ -59,14 +59,6 @@ h1 {
 }
 
 
-.subtitle {
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  color: #ccc;
-  margin-bottom: 10px;
-  white-space: nowrap; /* Evita que el texto haga salto de línea */
-}
-
 .portfolio-button {
   display: inline-block;
   padding: 12px 24px;
@@ -95,7 +87,7 @@ h1 {
 @media (max-width: 768px) {
   .info-container {
     top: auto;
-    bottom: 50%;
+    bottom: 30%;
     transform: translateX(-50%);
     width: 90%;
   }
@@ -110,13 +102,6 @@ h1 {
     white-space: nowrap; /* Evita que el texto haga salto de línea */
   }
 
-  .info-container .subtitle {
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-  white-space: normal;
-  text-align: center;
-  line-height: 1.4;
-}
 
   .info-container .portfolio-button {
     font-size: 1rem;
