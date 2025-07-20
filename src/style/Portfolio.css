@@ -1,7 +1,7 @@
 
 
 .portfolio-container {
-    background-color: #121212;
+    background-color: black;
     background-position: center;
     background-attachment: fixed;  /* efecto parallax suave */
     min-height: 100vh;
