@@ -12,8 +12,8 @@
     left: 0;
     right: 0;
     height: 60px;
-    background-color: var(--bg);
-    color: var(--text);
+    background-color: black;
+    color: white;
     padding: 0 1.5rem;
     z-index: 1000; /* debajo de la cortina */
   }
@@ -26,7 +26,7 @@
     width: 100%;
     height: 0;
     background-color: #4d4f3e;
-    color: var(--text);
+    color: white;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     overflow: hidden;
@@ -98,20 +98,7 @@
   .logo-image {
     height: 60px;
   }
-  
-  /* Tema claro/oscuro */
-  :root {
-    --bg: #f6f7e4 ;
-    --text: #000;
-    --switch: #4d4f3e;
-  }
-  
-  .dark-mode {
-    --bg: #121212;
-    --text: #fff;
-    --switch: #fff;
-  }
-  
+    
   /* Hamburguesa */
   .hamburger {
     display: flex;
@@ -123,7 +110,7 @@
   .hamburger span {
     width: 35px;
     height: 4px;
-    background-color: var(--text);
+    background-color: white;
     border-radius: 2px;
   }
   
