@@ -51,8 +51,9 @@ const Portfolio = () => {
       </section>
       <MovingBanner/>
 
-        <AboutMe/>
-     
+      <section id="about" className="section">
+       
+      </section>
 
       <section id="proyectos" className="section">
        
