@@ -234,17 +234,3 @@
 }
 }
 
-
-.social-icon {
-  width: 40px;
-  height: 40px;
-  fill: #800020;
-  background: #4d4f3e;
-  border-radius: 50%;
-  padding: 8px;
-  transition: fill 0.3s ease;
-}
-
-.social-icon:hover {
-  fill: #a5c64d;
-}
