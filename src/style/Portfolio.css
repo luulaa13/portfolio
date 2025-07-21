@@ -138,12 +138,12 @@
 }
 
 .contacto-section{
- background-color: #800020; /* o #6B8E23 para verde oliva */
+ background-color: #6B8E23; /* o #6B8E23 para verde oliva */
   border-radius: 40px;
   padding: 60px 40px;
-  width: 96%;
+  width: 98%;
   max-width: 1200px;
-  margin: 100px auto;
+  margin: 40px auto;
   color: #f6f7e4;
   position: relative;
   text-align: left;
