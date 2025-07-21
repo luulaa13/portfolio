@@ -5,9 +5,9 @@ import React from 'react'
 import  MovingBanner from './MovingBanner.jsx'
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import Linkedin from './logo-linkedin.svg';
-import Dribble from './104497_dribbble_icon.svg';
-import Github from './github-mark.svg';
+import { ReactComponent as LinkedinIcon } from './logo-linkedin.svg';
+import { ReactComponent as DribbbleIcon }'./104497_dribbble_icon.svg';
+import { ReactComponent as GithubIcon } from './github-mark.svg';
 
 const Portfolio = () => {
 
@@ -69,10 +69,10 @@ const Portfolio = () => {
       </section>
 
       <section id="contacto" className="contacto-section">
-          <div className="top-right-icons">
-            <a href="https://www.linkedin.com/in/luciauxui/"><img src={Linkedin} alt="Linkedin" /></a>
-            <a href="https://dribbble.com/luuulaa"><img src={Dribble} alt="Dribble" /></a>
-            <a href="https://github.com/luulaa13"><img src={Github} alt="Github"/></a>
+         <div className="top-right-icons">
+            <a href="https://www.linkedin.com/in/luciauxui/"><LinkedinIcon className="social-icon" /></a>
+            <a href="https://dribbble.com/luuulaa"><DribbbleIcon className="social-icon" /></a>
+            <a href="https://github.com/luulaa13"><GithubIcon className="social-icon" /></a>
           </div>
 
   <h2>¡TRABAJEMOS JUNTOS! :<br />CONECTA Y CREA SIN LIMITACIONES</h2>
