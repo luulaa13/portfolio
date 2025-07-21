@@ -6,7 +6,7 @@ import  MovingBanner from './MovingBanner.jsx'
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ReactComponent as LinkedinIcon } from './logo-linkedin.svg';
-import { ReactComponent as DribbbleIcon }'./104497_dribbble_icon.svg';
+import { ReactComponent as DribbbleIcon } from './104497_dribbble_icon.svg';
 import { ReactComponent as GithubIcon } from './github-mark.svg';
 
 const Portfolio = () => {
