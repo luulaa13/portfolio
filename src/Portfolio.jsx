@@ -38,13 +38,13 @@ const Portfolio = () => {
         <div className="hero-text">
           <h1>HOLA, SOY LUCIA</h1>
           <p className="hero-subtitle">
-            Diseño, desarrollo y estrategia digital unidas para crear algo único.
+          Diseño, desarrollo y estrategia digital para crear experiencias únicas que conectan y transforman
           </p>
         </div>
 
         <div className="hero-buttons" ref={buttonsRef}>
-          <a href="#about" className="hero-btn secondary">Sobre mí</a>
-          <a href="#proyectos" className="hero-btn primary">Ver proyectos</a>
+          <a href="#about" className="hero-btn secondary">Conoceme</a>
+          <a href="#proyectos" className="hero-btn primary">Explorar proyectos</a>
         </div>
      
         <div className="scroll-down-arrow">

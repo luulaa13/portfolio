@@ -5,7 +5,7 @@
     background-position: center;
     background-attachment: fixed;  /* efecto parallax suave */
     min-height: 100vh;
-    color: white;
+    color: #f6f7e4;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -72,14 +72,14 @@
   }
   
   .hero-btn.primary {
-    background-color: #4d4f3e;
-    color: white;
+    background-color: #800020;
+    color: #f6f7e4;
   }
   
   .hero-btn.secondary {
     background-color: transparent;
-    border: 2px solid #4d4f3e;
-    color: #4d4f3e;
+    border: 2px solid #800020;
+    color: #f6f7e4;
   }
   
 
@@ -100,7 +100,7 @@
   }
   
   .scroll-down-arrow svg {
-    color: #4d4f3e;
+    color: #800020;
     width: 40px;      /* Aumenta tamaño horizontal */
     height: 40px;     /* Aumenta tamaño vertical */
   }
@@ -175,7 +175,7 @@
   display: inline-block;
   padding: 12px 24px;
   background-color: #800020;
-  color: white;
+  color: #f6f7e4;
   text-decoration: none;
   border-radius: 20px;
   font-weight: bold;
@@ -183,7 +183,7 @@
 }
 
 .mi-boton:hover {
-  background-color: white;
+  background-color: #f6f7e4;
   color: #800020;
 }
 

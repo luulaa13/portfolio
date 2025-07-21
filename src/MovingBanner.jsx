@@ -26,10 +26,10 @@ const MovingBanner = () => {
   return (
     <div className="moving-banner-wrapper" style={{ overflow: 'hidden', whiteSpace: 'nowrap' }}>
      <div className="moving-banner" ref={bannerRef}>
-        Diseño UX/UI &nbsp; ** &nbsp; Desarrollo Web &nbsp; ** &nbsp; Marketing Digital &nbsp; ** &nbsp;
-        Diseño UX/UI &nbsp; ** &nbsp; Desarrollo Web &nbsp; ** &nbsp; Marketing Digital &nbsp; ** &nbsp;
-        Diseño UX/UI &nbsp; ** &nbsp; Desarrollo Web &nbsp; ** &nbsp; Marketing Digital &nbsp; ** &nbsp;
-        Diseño UX/UI &nbsp; ** &nbsp; Desarrollo Web &nbsp; ** &nbsp; Marketing Digital &nbsp; ** &nbsp;
+        Diseño UX/UI &nbsp; ** &nbsp; Desarrollo Web &nbsp; ** &nbsp; Marketing Digital &nbsp; ** &nbsp; Branding &nbsp;
+        Diseño UX/UI &nbsp; ** &nbsp; Desarrollo Web &nbsp; ** &nbsp; Marketing Digital &nbsp; ** &nbsp; Branding &nbsp;
+        Diseño UX/UI &nbsp; ** &nbsp; Desarrollo Web &nbsp; ** &nbsp; Marketing Digital &nbsp; ** &nbsp; Branding &nbsp;
+        Diseño UX/UI &nbsp; ** &nbsp; Desarrollo Web &nbsp; ** &nbsp; Marketing Digital &nbsp; ** &nbsp; Branding &nbsp;
 </div>
     </div>
   )

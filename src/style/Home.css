@@ -2,7 +2,7 @@ body {
   overflow-x: hidden;
 }
 .moving-banner-wrapper {
-    margin-top: 105px;
+    margin-top: 50px;
     position: relative;
     width: 100vw; /* Ancho total de la ventana */
     overflow: hidden;
@@ -16,7 +16,7 @@ body {
     display: inline-block;
     font-weight: bold;
     font-size: 1.2rem;
-    color: #fff;
+    color: #f6f7e4;
     white-space: nowrap;
     user-select: none;
   }
