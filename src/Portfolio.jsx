@@ -67,7 +67,7 @@ const Portfolio = () => {
 
       <section id="contacto" className="contacto-section">
           <div className="top-right-icons">
-            <a href="#"><img src="/icon-instagram.svg" alt="Linkedin" /></a>
+            <a href="#"><i className="fas fa-linkedin" alt="Linkedin"></i></a>
             <a href="#"><img src="/icon-behance.svg" alt="Dribble" /></a>
             <a href="#"><img src="/icon-telegram.svg" alt="Correo" /></a>
           </div>
