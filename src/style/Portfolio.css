@@ -212,7 +212,8 @@
 }
 
 .email {
-  font-size: 50px; /* o lo que prefieras */
+margin-top: 20px;
+  font-size: 100px; /* o lo que prefieras */
   font-weight: bold;
   line-height: 1.2;
   margin-top: 1.5rem;
