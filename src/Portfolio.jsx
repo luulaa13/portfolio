@@ -69,7 +69,7 @@ const Portfolio = () => {
           <div className="top-right-icons">
             <a href="https://www.linkedin.com/in/luciauxui/"><img src="/icon-instagram.svg" alt="Instagram" /></a>
             <a href="https://dribbble.com/luuulaa"><img src="/icon-instagram.svg" alt="Instagram" /></a>
-            <a href="mailto:luciagarciagarcia.lgg@gmail.com"><img src="/icon-instagram.svg" alt="Instagram" /></a>
+            <a href="mailto:luciauxui@gmail.com"><img src="/icon-instagram.svg" alt="Instagram" /></a>
           </div>
 
   <h2>¡TRABAJEMOS JUNTOS! :<br />CONECTA Y CREA SIN LIMITACIONES</h2>
@@ -79,7 +79,7 @@ const Portfolio = () => {
   Enviar correo
 </a>
 
-  <p className="email">luciagarciagarcia.lgg@gmail.com</p>
+  <p className="email">luciauxui@gmail.com</p>
 
   <div className="illustrations">
   
