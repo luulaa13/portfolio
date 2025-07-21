@@ -79,7 +79,8 @@ const Portfolio = () => {
   Enviar correo
 </a>
 
-  <p className="email">luciauxui@gmail.com</p>
+  <p className="email">luciauxui<br/>
+    @gmail.com</p>
 
   <div className="illustrations">
   
