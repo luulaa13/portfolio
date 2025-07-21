@@ -67,8 +67,8 @@ const Portfolio = () => {
 
       <section id="contacto" className="contacto-section">
           <div className="top-right-icons">
-            <a href="#"></a>
-            <a href="#"></a>
+            <a href="https://www.linkedin.com/in/luciauxui/"></a>
+            <a href="https://dribbble.com/luuulaa"></a>
             <a href="#"></a>
           </div>
 
