@@ -6,6 +6,8 @@ import  MovingBanner from './MovingBanner.jsx'
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import Linkedin from './logo-linkedin.svg';
+import Dribble from './104497_dribbble_icon.svg';
+import Github from './github-mark.svg';
 
 const Portfolio = () => {
 
@@ -69,8 +71,8 @@ const Portfolio = () => {
       <section id="contacto" className="contacto-section">
           <div className="top-right-icons">
             <a href="https://www.linkedin.com/in/luciauxui/"><img src={Linkedin} alt="Linkedin" /></a>
-            <a href="https://dribbble.com/luuulaa"><img src="/icon-instagram.svg" alt="Dribble" /></a>
-            <a href="https://github.com/luulaa13"><img src="/icon-instagram.svg" alt="Github"/></a>
+            <a href="https://dribbble.com/luuulaa"><img ssrc={Dribble} alt="Dribble" /></a>
+            <a href="https://github.com/luulaa13"><img src={Github} alt="Github"/></a>
           </div>
 
   <h2>¡TRABAJEMOS JUNTOS! :<br />CONECTA Y CREA SIN LIMITACIONES</h2>
