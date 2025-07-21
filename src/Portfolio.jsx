@@ -67,9 +67,9 @@ const Portfolio = () => {
 
       <section id="contacto" className="contacto-section">
           <div className="top-right-icons">
-            <a href="#"><i className="fas fa-linkedin" alt="Linkedin"></i></a>
-            <a href="#"><img src="/icon-behance.svg" alt="Dribble" /></a>
-            <a href="#"><img src="/icon-telegram.svg" alt="Correo" /></a>
+            <a href="#"><FontAwesomeIcon icon="fab fa-linkedin-in" alt="Linkedin"/></a>
+            <a href="#"><FontAwesomeIcon icon="fab fa-dribbble"  alt="Dribble"/></a>
+            <a href="#"><FontAwesomeIcon icon="fa-solid fa-paper-plane" alt="Email"/></a>
           </div>
 
   <h2>¡TRABAJEMOS JUNTOS!:<br />cONECTA Y CREA SIN LIMITACIONES</h2>
