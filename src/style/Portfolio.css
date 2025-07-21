@@ -209,3 +209,16 @@
   height: 140px;
 }
 
+
+/* Mobile first adjustments */
+@media (max-width: 600px) {
+  .contact-section h2 {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+
+  .contact-section p {
+    font-size: 1rem;
+  }
+}
+
