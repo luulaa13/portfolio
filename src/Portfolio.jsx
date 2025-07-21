@@ -77,19 +77,19 @@ const Portfolio = () => {
             <a href="https://github.com/luulaa13"><img src={Github}/></a>
           </div>
 
-  <h2>¡TRABAJEMOS JUNTOS! :<br />CONECTA Y CREA SIN LIMITACIONES</h2>
-  <p>Cuentame tu visión y veamos como podemos hacerla realidad juntos</p>
+          <h2>¡TRABAJEMOS JUNTOS! :<br />CONECTA Y CREA SIN LIMITACIONES</h2>
+          <p>Cuentame tu visión y veamos como podemos hacerla realidad juntos</p>
 
- <a href="mailto:luciauxui@gmail.com" className="mi-boton">
-  Enviar correo
-</a>
+        <a href="mailto:luciauxui@gmail.com" className="mi-boton">
+          Enviar correo
+        </a>
 
-  <p className="email">luciauxui<br/>
-    @gmail.com</p>
+          <p className="email">luciauxui<br/>
+            @gmail.com</p>
 
-  <div className="illustrations">
-     <img src={BackstageGif} alt="Animación Backstage" />
-  </div>
+          <div className="illustrations">
+            <img src={BackstageGif} alt="Animación Backstage" />
+          </div>
       </section>
 
     </div>
