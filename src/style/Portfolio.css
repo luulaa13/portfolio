@@ -201,29 +201,34 @@
 
 /* Mobile first adjustments */
 @media (max-width: 600px) {
+  .contacto-section{
+    padding: 60px 40px 60px 40px;
+  }
   .contacto-section h2 {
     font-size: 1.6rem;
     line-height: 1.4;
-    margin-top: 60px; /* crea espacio extra por si hace falta separarlo de los íconos */
+    padding-bottom: 40px;
   }
 
   .contacto-section p {
     font-size: 1rem;
   }
-.contacto-section .email{
-  font-size: 24px; /* Para que no se vea exagerado en pantallas pequeñas */
-  bottom: 10px;
-  left: 10px;
-}
+  .contacto-section .email {
+    position: static;
+    margin-top: 30px;  /* espacio entre botón y email */
+    margin-bottom: 5px; /* solo un pelín antes del gif */
+    font-size: 30px;
+  }
 .illustrations {
   position: static; /* vuelve al flujo natural */
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
 }
 
 .illustrations img {
   max-height: 90px;
+  margin-bottom: -30px;
 }
 
   .top-right-icons {
