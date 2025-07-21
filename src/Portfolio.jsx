@@ -70,7 +70,7 @@ const Portfolio = () => {
           <div className="top-right-icons">
             <a href="https://www.linkedin.com/in/luciauxui/"><img src={Linkedin} alt="Linkedin" /></a>
             <a href="https://dribbble.com/luuulaa"><img src="/icon-instagram.svg" alt="Dribble" /></a>
-            <a href=""><img src="/icon-instagram.svg" alt="Github"/></a>
+            <a href="https://github.com/luulaa13"><img src="/icon-instagram.svg" alt="Github"/></a>
           </div>
 
   <h2>¡TRABAJEMOS JUNTOS! :<br />CONECTA Y CREA SIN LIMITACIONES</h2>
