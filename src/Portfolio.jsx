@@ -67,17 +67,17 @@ const Portfolio = () => {
 
       <section id="contacto" className="contacto-section">
           <div className="top-right-icons">
-            <a href="#"><img src="/icon-instagram.svg" alt="Instagram" /></a>
-            <a href="#"><img src="/icon-behance.svg" alt="Behance" /></a>
-            <a href="#"><img src="/icon-telegram.svg" alt="Telegram" /></a>
+            <a href="#"><img src="/icon-instagram.svg" alt="Linkedin" /></a>
+            <a href="#"><img src="/icon-behance.svg" alt="Dribble" /></a>
+            <a href="#"><img src="/icon-telegram.svg" alt="Correo" /></a>
           </div>
 
-  <h2>LET'S JAM TOGETHER:<br />CONNECT AND CREATE!</h2>
-  <p>I’d love to hear about your brand’s vision and how I can help it shine!</p>
+  <h2>¡TRABAJEMOS JUNTOS!:<br />cONECTA Y CREA SIN LIMITACIONES</h2>
+  <p>Cuentame tu visión y veamos como podemos hacerla realidad juntos</p>
 
-  <button className="contact-button">Contact me</button>
+  <button className="contact-button">ESCRIBEME</button>
 
-  <p className="email">comme.kamila@gmail.com</p>
+  <p className="email">luciagarciagarcia.lgg@gmail.com</p>
 
   <div className="illustrations">
   
