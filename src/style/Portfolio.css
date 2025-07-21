@@ -138,9 +138,9 @@
 }
 
 .contacto-section{
-  width: 90%; /* ocupa casi todo el ancho */
-  max-width: 1000px; /* límite para pantallas grandes */
-  margin: 100px auto; /* centrado y separación del resto */
+ width: 96%;            /* casi toda la pantalla */
+  max-width: 1200px;     /* para limitarlo en pantallas grandes */
+  margin: 80px auto; 
   padding: 40px;
   background-color: #800020; /* o #6B8E23 si prefieres verde oliva */
   border-radius: 24px;
