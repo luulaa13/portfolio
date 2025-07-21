@@ -198,6 +198,8 @@
 .top-right-icons a .social-icon {
   width: 40px;
   height: 40px;
+  fill: #f6f7e4;
+  background: #4d4f3e;
   border-radius: 50%;
   padding: 5px;
   transition: fill 0.3s ease;
@@ -206,7 +208,6 @@
 .top-right-icons a .social-icon:hover {
   fill: #a5c64d;
 }
-
 
 .illustrations {
   display: flex;
