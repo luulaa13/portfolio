@@ -228,26 +228,37 @@
 .contacto-section::after {
   content: "";
   position: absolute;
-  width: 80px;
-  height: 25px;
-  background: rgba(255, 255, 200, 0.4); /* tono tipo celo */
-  backdrop-filter: blur(1px); /* efecto vidrio si se quiere más realista */
+  width: 90px;
+  height: 28px;
+  background: rgba(255, 255, 200, 0.4);
   border: 1px solid rgba(255, 255, 200, 0.5);
-  border-radius: 3px;
-  z-index: 2;
+  z-index: 5;
   pointer-events: none;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px);
+  border-radius: 2px;
+
+  /* “piquitos” en los extremos usando clip-path con forma dentada */
+  clip-path: polygon(
+    5% 0%, 10% 20%, 15% 0%, 20% 20%, 25% 0%, 30% 20%, 35% 0%,
+    40% 20%, 45% 0%, 50% 20%, 55% 0%, 60% 20%, 65% 0%, 70% 20%,
+    75% 0%, 80% 20%, 85% 0%, 90% 20%, 95% 0%, 100% 20%, 100% 100%,
+    95% 80%, 90% 100%, 85% 80%, 80% 100%, 75% 80%, 70% 100%,
+    65% 80%, 60% 100%, 55% 80%, 50% 100%, 45% 80%, 40% 100%,
+    35% 80%, 30% 100%, 25% 80%, 20% 100%, 15% 80%, 10% 100%,
+    5% 80%, 0% 100%, 0% 20%
+  );
 }
 
 .contacto-section::before {
-  top: -12px;
-  left: 30px;
-  transform: rotate(-12deg);
+  top: -14px;
+  right: 30px;
+  transform: rotate(10deg);
 }
 
 .contacto-section::after {
-  top: -12px;
-  right: 30px;
-  transform: rotate(10deg);
+  bottom: -14px;
+  left: 30px;
+  transform: rotate(-12deg);
 }
 
