@@ -212,10 +212,9 @@
 }
 
 .email {
-  font-size: 1.8rem; /* o lo que prefieras */
+  font-size: 30px; /* o lo que prefieras */
   font-weight: bold;
   line-height: 1.2;
-  text-align: center; /* o left si prefieres */
   margin-top: 1.5rem;
 }
 
