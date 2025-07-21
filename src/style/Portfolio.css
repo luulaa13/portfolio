@@ -72,14 +72,18 @@
   }
   
   .hero-btn.primary {
-    background-color: #4B5320;
+    background-color: #2F3E29
+
+;
     color: white;
   }
   
   .hero-btn.secondary {
     background-color: transparent;
-    border: 2px solid #4B5320;
-    color: #4B5320;
+    border: 2px solid #2F3E29
+;
+    color: #2F3E29
+;
   }
   
 
@@ -138,7 +142,8 @@
 }
 
 .contacto-section{
- background-color: #4B5320; /* o #6B8E23 para verde oliva */
+ background-color: #2F3E29
+; /* o #6B8E23 para verde oliva */
   border-radius: 40px;
   padding: 60px 40px;
   width: 98%;
