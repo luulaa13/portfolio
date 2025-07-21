@@ -207,7 +207,7 @@
   .contacto-section h2 {
     font-size: 1.6rem;
     line-height: 1.4;
-    padding-bottom: 40px;
+    margin-top: 50px;
   }
 
   .contacto-section p {
@@ -227,7 +227,7 @@
 }
 
 .illustrations img {
-  max-height: 90px;
+  max-height: 80px;
   margin-bottom: -30px;
 }
 
@@ -240,7 +240,6 @@
   .top-right-icons a img {
     width: 36px;
     height: 36px;
-    padding: 4px; /* si tienes paddings internos */
   }
 
 }
