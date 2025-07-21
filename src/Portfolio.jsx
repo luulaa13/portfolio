@@ -65,7 +65,7 @@ const Portfolio = () => {
         
       </section>
 
-      <section id="contacto" className="section">
+      <section id="contacto" className="contacto-section">
        
       </section>
 
