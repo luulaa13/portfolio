@@ -179,9 +179,9 @@
 
 .contacto-section .email {
   margin-top: 40px;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
+  font-size: 100px; /* o lo que prefieras */
+  line-height: 1.2; 
+  }
 
 .top-right-icons {
   position: absolute;
@@ -211,12 +211,7 @@
   height: 140px;
 }
 
-.email {
-  margin-top: 20px;
-  font-size: 100px; /* o lo que prefieras */
-  line-height: 1.2;
-  margin-top: 1.5rem;
-}
+
 
 
 /* Mobile first adjustments */
