@@ -67,9 +67,9 @@ const Portfolio = () => {
 
       <section id="contacto" className="contacto-section">
           <div className="top-right-icons">
-            <a href="https://www.linkedin.com/in/luciauxui/"></a>
-            <a href="https://dribbble.com/luuulaa"></a>
-            <a href="#"></a>
+            <a href="https://www.linkedin.com/in/luciauxui/"><img src="/icon-instagram.svg" alt="Instagram" /></a>
+            <a href="https://dribbble.com/luuulaa"><img src="/icon-instagram.svg" alt="Instagram" /></a>
+            <a href="mailto:luciagarciagarcia.lgg@gmail.com"><img src="/icon-instagram.svg" alt="Instagram" /></a>
           </div>
 
   <h2>¡TRABAJEMOS JUNTOS!:<br />CONECTA Y CREA SIN LIMITACIONES</h2>
