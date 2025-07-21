@@ -5,7 +5,7 @@ import React from 'react'
 import  MovingBanner from './MovingBanner.jsx'
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import Linkedin from '/logo-linkedin.svg';
+import Linkedin from './logo-linkedin.svg';
 
 const Portfolio = () => {
 
