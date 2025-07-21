@@ -224,3 +224,30 @@
 }
 
 
+.contacto-section::before,
+.contacto-section::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 25px;
+  background: rgba(255, 255, 200, 0.4); /* tono tipo celo */
+  backdrop-filter: blur(1px); /* efecto vidrio si se quiere más realista */
+  border: 1px solid rgba(255, 255, 200, 0.5);
+  border-radius: 3px;
+  z-index: 2;
+  pointer-events: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-section::before {
+  top: -12px;
+  left: 30px;
+  transform: rotate(-12deg);
+}
+
+.contacto-section::after {
+  top: -12px;
+  right: 30px;
+  transform: rotate(10deg);
+}
+
