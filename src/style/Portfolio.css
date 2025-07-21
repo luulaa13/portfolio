@@ -215,14 +215,16 @@
   bottom: 10px;
   left: 10px;
 }
-  .illustrations {
-    bottom: 10px;
-    right: 10px;
-  }
+.illustrations {
+  position: static; /* vuelve al flujo natural */
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
 
-  .illustrations img {
-    max-height: 80px; /* Ajusta según lo que se vea mejor */
-  }
+.illustrations img {
+  max-height: 90px;
+}
 
   .top-right-icons {
     top: 10px;
