@@ -211,6 +211,14 @@
   height: 140px;
 }
 
+.email {
+  font-size: 1.8rem; /* o lo que prefieras */
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center; /* o left si prefieres */
+  margin-top: 1.5rem;
+}
+
 
 /* Mobile first adjustments */
 @media (max-width: 600px) {
