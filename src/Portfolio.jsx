@@ -75,7 +75,7 @@ const Portfolio = () => {
   <h2>¡TRABAJEMOS JUNTOS! :<br />CONECTA Y CREA SIN LIMITACIONES</h2>
   <p>Cuentame tu visión y veamos como podemos hacerla realidad juntos</p>
 
- <a href="mailto:tu-correo@ejemplo.com" className="mi-boton">
+ <a href="mailto:luciauxui@gmail.com" className="mi-boton">
   Enviar correo
 </a>
 
