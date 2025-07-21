@@ -141,8 +141,8 @@
   background-color: #4d4f3e;
   border-radius: 40px;
   padding: 60px 40px 180px 40px; /* top, right, bottom, left */
-  width: 98%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1400px;
   margin: 40px auto;
   color: #f6f7e4;
   position: relative;
@@ -258,4 +258,9 @@
   height: 50px;
   background: #f6f7e4;
   border-radius: 50%;
+}
+
+.top-right-icons a img:hover {
+  transform: scale(1.3); /* aumenta un 10% */
+  cursor: pointer; /* opcional, para que el cursor cambie */
 }
