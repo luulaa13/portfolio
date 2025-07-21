@@ -66,7 +66,22 @@ const Portfolio = () => {
       </section>
 
       <section id="contacto" className="contacto-section">
-       
+          <div className="top-right-icons">
+            <a href="#"><img src="/icon-instagram.svg" alt="Instagram" /></a>
+            <a href="#"><img src="/icon-behance.svg" alt="Behance" /></a>
+            <a href="#"><img src="/icon-telegram.svg" alt="Telegram" /></a>
+          </div>
+
+  <h2>LET'S JAM TOGETHER:<br />CONNECT AND CREATE!</h2>
+  <p>I’d love to hear about your brand’s vision and how I can help it shine!</p>
+
+  <button className="contact-button">Contact me</button>
+
+  <p className="email">comme.kamila@gmail.com</p>
+
+  <div className="illustrations">
+  
+  </div>
       </section>
 
     </div>
