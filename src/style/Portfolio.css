@@ -166,13 +166,14 @@
   background-color: #800020;
   color: white;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 20px;
   font-weight: bold;
   transition: background 0.3s ease;
 }
 
 .mi-boton:hover {
-  background-color: #a52a2a;
+  background-color: white;
+  color: #800020;
 }
 
 .contacto-section .email {
