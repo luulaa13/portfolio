@@ -243,14 +243,14 @@
 
 /* Celo arriba a la derecha */
 .contacto-section::before {
-  top: -10px;
+  top: -15px;
   right: 5px;
   transform: rotate(18deg);
 }
 
 /* Celo abajo a la izquierda */
 .contacto-section::after {
-  bottom: -10px;
+  bottom: -15px;
   left: 5px;
-  transform: rotate(-18deg);
+  transform: rotate(18deg);
 }
