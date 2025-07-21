@@ -251,8 +251,8 @@
 /* Celo arriba a la derecha */
 .contacto-section::before {
   top: -10px;
-  right: 50px;
-  transform: rotate(10deg);
+  right: 10px;
+  transform: rotate(18deg);
 }
 
 /* Celo abajo a la izquierda */
