@@ -66,22 +66,27 @@ const Portfolio = () => {
       </section>
 
       <section id="contacto" className="contacto-section">
-          <div className="top-right-icons">
-            <a href="#"><img src="/icon-instagram.svg" alt="Instagram" /></a>
-            <a href="#"><img src="/icon-behance.svg" alt="Behance" /></a>
-            <a href="#"><img src="/icon-telegram.svg" alt="Telegram" /></a>
+             <div className="contact-content">
+            <div className="text-zone">
+              <h2>¡TRABAJEMOS JUNTOS!</h2>
+              <h3>Conecta y crea sin límites</h3>
+              <p>Cuéntame tu visión y veamos cómo podemos hacerla realidad juntos.</p>
+        
+              <button className="contact-button">Escríbeme</button>
+        
+              <div className="contact-info">
+                <p>tucorreo@example.com</p>
+              </div>
+            </div>
+        
+            <div className="icon-zone">
+              <div className="social-icons">
+                <a href="#" className="social-circle">IG</a>
+                <a href="#" className="social-circle">Bē</a>
+                <a href="#" className="social-circle">✉️</a>
+              </div>
+            </div>
           </div>
-
-  <h2>LET'S JAM TOGETHER:<br />CONNECT AND CREATE!</h2>
-  <p>I’d love to hear about your brand’s vision and how I can help it shine!</p>
-
-  <button className="contact-button">Contact me</button>
-
-  <p className="email">comme.kamila@gmail.com</p>
-
-  <div className="illustrations">
-  
-  </div>
       </section>
 
     </div>
