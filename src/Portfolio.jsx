@@ -5,9 +5,11 @@ import React from 'react'
 import  MovingBanner from './MovingBanner.jsx'
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import { ReactComponent as LinkedinIcon } from './logo-linkedin.svg';
-import { ReactComponent as DribbbleIcon } from './104497_dribbble_icon.svg';
-import { ReactComponent as GithubIcon } from './github-mark.svg';
+import Linkedin from '../src/assets/linkedin.svg';
+import Dribble from '../src/assets/dribble.svg';
+import Github from '../src/assets/github.svg';
+import BackstageGif from '../src/assets/backstage.gif'; 
+
 
 const Portfolio = () => {
 
@@ -70,9 +72,9 @@ const Portfolio = () => {
 
       <section id="contacto" className="contacto-section">
          <div className="top-right-icons">
-            <a href="https://www.linkedin.com/in/luciauxui/"><LinkedinIcon className="social-icon" /></a>
-            <a href="https://dribbble.com/luuulaa"><DribbbleIcon className="social-icon" /></a>
-            <a href="https://github.com/luulaa13"><GithubIcon className="social-icon" /></a>
+            <a href="https://www.linkedin.com/in/luciauxui/"><img src={Linkedin}/></a>
+            <a href="https://dribbble.com/luuulaa"><img src={Dribble}/></a>
+            <a href="https://github.com/luulaa13"><img src={Github}/></a>
           </div>
 
   <h2>¡TRABAJEMOS JUNTOS! :<br />CONECTA Y CREA SIN LIMITACIONES</h2>
@@ -86,7 +88,7 @@ const Portfolio = () => {
     @gmail.com</p>
 
   <div className="illustrations">
-  
+     <img src={BackstageGif} alt="Animación Backstage" />
   </div>
       </section>
 
