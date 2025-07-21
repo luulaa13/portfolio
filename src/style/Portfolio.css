@@ -138,14 +138,15 @@
 }
 
 .contacto-section{
-    max-width: 800px;
-      margin: 80px auto;
-      padding: 40px;
-      background-color: #800020; /* Puedes probar con #6B8E23 para oliva */
-      border-radius: 24px;
-      color: #f6f7e4;
-      box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-      text-align: center;
+  width: 90%; /* ocupa casi todo el ancho */
+  max-width: 1000px; /* límite para pantallas grandes */
+  margin: 100px auto; /* centrado y separación del resto */
+  padding: 40px;
+  background-color: #800020; /* o #6B8E23 si prefieres verde oliva */
+  border-radius: 24px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+  color: #f6f7e4;
+  text-align: center;
 }
 
 
