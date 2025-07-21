@@ -228,7 +228,7 @@
 .contacto-section::after {
   content: "";
   position: absolute;
-  width: 90px;
+  width: 110px;
   height: 30px;
   background: rgba(255, 255, 200, 0.4);
   border: 1px solid rgba(255, 255, 200, 0.5);
@@ -250,7 +250,7 @@
 
 /* Celo arriba a la derecha */
 .contacto-section::before {
-  top: -10px;
+  top: -8px;
   right: 10px;
   transform: rotate(18deg);
 }
