@@ -152,6 +152,7 @@
 }
 
 .contacto-section .email {
+ padding-top: 30px;
   position: absolute; /* ESTO ES LO QUE FALTABA */
   bottom: 20px;
   left: 40px;
