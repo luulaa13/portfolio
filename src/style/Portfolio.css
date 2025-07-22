@@ -297,7 +297,7 @@ margin-left:0;
 }
 
 .string-tie-connector img {
-  height: 200px; /* ajustá según tamaño real del PNG */
+  height: 300px; /* ajustá según tamaño real del PNG */
   max-width: 100%;
   display: block;
 }
