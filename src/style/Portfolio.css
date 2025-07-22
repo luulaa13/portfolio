@@ -139,11 +139,7 @@
 
 .contacto-section {
   background-color: #4d4f3e;
-  padding: 60px 40px 180px 40px; /* top, right, bottom, left */
-  width: 100%;
-  max-width: 1400px;
-  margin: 40px auto;
-  color: #f6f7e4;
+  color: #DECBB7;
   position: relative;
   text-align: left;
   font-family: 'Spectral Bridge', serif;
