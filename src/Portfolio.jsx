@@ -34,7 +34,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio-container">
       <Navbar />
-      <section id="inicio" className="hero-section">
+      <section id="inicio" className="section">
     
         <div className="hero-text">
           <h1>HOLA, SOY LUCIA</h1>
