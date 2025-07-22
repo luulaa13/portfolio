@@ -247,6 +247,7 @@
 
 
 .top-right-icons {
+  padding: 100px 20px 120px; /* aumenta el top padding */
   position: absolute;
   top: 30px;
   right: 30px;
