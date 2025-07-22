@@ -12,8 +12,8 @@
     left: 0;
     right: 0;
     height: 60px;
-    background-color: black;
-    color: white;
+    background-color: #F7F4E4;
+    color: #800020;
     padding: 0 1.5rem;
     z-index: 1000; /* debajo de la cortina */
   }
@@ -116,54 +116,10 @@
   .hamburger span {
     width: 35px;
     height: 4px;
-    background-color: white;
+    background-color: #800020;
     border-radius: 2px;
   }
-  
-  .theme-switch {
-    display: flex;
-    align-items: center;
-  }
-  
-  /* Ocultar el input */
-  .switch input {
-    display: none;
-  }
-  
-  /* Switch container (solo borde, sin fondo) */
-  .switch .track {
-    width: 90px;
-    height: 40px;
-    border: 1px solid var(--switch);
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 6px;
-    box-sizing: border-box;
-    background-color: transparent;
-  }
-  
-  /* Iconos dentro del switch */
-  .switch-icon {
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--switch);
-    transition: background 0.3s ease, color 0.3s ease;
-  }
-  
-  /* Icono activo con fondo */
-  .switch-icon.active {
-    background-color: var(--switch);
-    color: #f6f7e4;
-  }
-  
- 
+   
   .close-button {
     position: absolute;
     top: 15px;
