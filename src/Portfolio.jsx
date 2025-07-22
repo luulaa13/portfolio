@@ -30,7 +30,7 @@ const Portfolio = () => {
 
       <section id="newsletter" className="section">
       </section>
-      <section className="contacto-background"></section> {/* NUEVO fondo detrás */}
+   
       <section id="contacto" className="contacto-section">
          <div className="top-right-icons">
             <a href="https://www.linkedin.com/in/luciauxui/"><img src={Linkedin}/></a>
