@@ -161,6 +161,12 @@ box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
   line-height: 1.2;
 }
 
+.email-illustration-row {
+  display: flex;
+  align-items: center; /* los alinea verticalmente */
+  gap: 20px; /* espacio entre email e ilustración */
+}
+
 
 .contacto-section h2 {
   font-size: 3rem;
