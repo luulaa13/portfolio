@@ -1,11 +1,11 @@
 
 
 .portfolio-container {
-    background-color: black;
+    background-color: #F7F4E4;
     background-position: center;
     background-attachment: fixed;  /* efecto parallax suave */
     min-height: 100vh;
-    color: #f6f7e4;
+    color: #800020;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@
     align-items: center;
     flex-wrap: wrap; /* por si estás en mobile */
     margin-top:100px;
-    color: white;
+    color:  #800020;
   }
   
   .hero-text {
@@ -139,7 +139,6 @@
 
 .contacto-section {
   background-color: #4d4f3e;
-  border-radius: 40px;
   padding: 60px 40px 180px 40px; /* top, right, bottom, left */
   width: 100%;
   max-width: 1400px;
