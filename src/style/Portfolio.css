@@ -21,10 +21,13 @@
     }
   }
   
-  .hero-section {
-    position: relative;
-    padding: 8rem 2rem 6rem; /* solo laterales equilibrados */
+  .hero-section, 
+  .about-section{
     background-color: #F7F4E4;
+    min-height: 100vh; /* Ocupa toda la pantalla */
+    width: 100%;
+    position: relative;
+    z-index: 1;
   }
   
   .hero-content {
