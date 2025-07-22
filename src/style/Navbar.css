@@ -83,14 +83,14 @@
 
 .dropdown-curtain a {
   font-family: 'Spectral Bridge', serif !important;
-  color: #f6f7e4;
+  color: #DECBB7;
   font-size: 64px;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .dropdown-curtain a:hover {
-  color: #000000;
+  color: #8E9C68;
 }
 
   /* Adaptación para móviles */
@@ -127,12 +127,12 @@
     font-size: 2rem;
     background: transparent;
     border: none;
-    color: #fff;
+    color: #DECBB7;
     cursor: pointer;
     user-select: none;
   }
   
 .close-button:hover{
-    color: #000000;
+    color: #8E9C68;
 }
 
