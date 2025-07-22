@@ -144,10 +144,10 @@
 .contacto-section {
   background-color: #4D4F3E;
   color: #f6f7e4;
-  padding: 120px 20px;
+  padding: 180px 20px 120px; /* aumenta el top padding */
   position: relative;
   z-index: 1;
-  margin-top: -40px; /* sube para cubrir el fondo de los bordes redondeados */
+  margin-top: -50px; /* sube para cubrir el fondo de los bordes redondeados */
   font-family: 'Spectral Bridge', serif;
 }
 
