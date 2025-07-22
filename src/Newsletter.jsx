@@ -1,34 +1,30 @@
 import React, { useState } from "react";
-import "../src/style/Newsletter.css"; // Usa tu CSS existente
+import "../src/style/Newsletter.css"; // Asegúrate de importar tu CSS aquí
 
-export default function Newsletter() {
-  const [abierto, setAbierto] = useState(false);
+const CartaInteractiva = () => {
+  const [abierta, setAbierta] = useState(false);
 
-  const toggleCarta = () => {
-    setAbierto(!abierto);
+  const manejarClick = () => {
+    setAbierta(!abierta);
   };
 
   return (
-    <>
+    <section id="newsletter" className="section">
       <div
         className="contenedor"
         id="AbrirContenedor"
-        onClick={toggleCarta}
+        onClick={manejarClick}
         style={{ cursor: "pointer" }}
       >
-        <div className={`superior ${abierto ? "abrir-superior" : ""}`}></div>
-
-        <div className={`mensaje ${abierto ? "abrir-mensaje" : ""}`}>
-          El amor está en las pequeñas cosas, en los momentos compartidos, en las
-          sonrisas y en los gestos que nos hacen sentir vivos. Hoy celebramos esos
-          detalles que hacen que el mundo sea un lugar más bonito
-          <p>Alejandro.</p>
-        </div>
-
-        <div className="carta">
+        <div className={`superior ${abierta ? "abrir-superior" : ""}`}></div>
+        <div className={`mensaje ${abierta ? "abrir-mensaje" : ""}`}>
         
+         
         </div>
+        <div className="carta"></div>
       </div>
-    </>
+    </section>
   );
-}
+};
+
+export default CartaInteractiva;

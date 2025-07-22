@@ -3,7 +3,7 @@
 .portfolio-container {
     overflow-x: hidden;
      position: relative;
-     background-color: #f5f0e6;
+     background-color: #a8a48e;
   }
   
   @media (min-width: 1024px) {
@@ -17,11 +17,11 @@
   .section {
     position: relative;
     padding: 8rem 2rem 6rem; /* solo laterales equilibrados */
-    background-color: #f5f0e6;
+    background-color: #a8a48e;
   }
 
 #newsletter {
-  background-color: #f5f0e6;
+  background-color: #a8a48e;
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
   position: relative;
@@ -163,7 +163,7 @@ box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
 .email-illustration-row {
   display: flex;
   align-items: center;
-  gap: 320px;
+  gap: 450px;
   margin-top: 40px;
   flex-direction: row;
 }
@@ -183,7 +183,8 @@ box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
   display: inline-block;
   position: relative;
   z-index: 2;
-  padding: 12px 24px;
+  margin-left: 150px;
+  padding: 14px 36px;
   background-color: #800020;
   color: #f6f7e4;
   text-decoration: none;
@@ -209,10 +210,32 @@ box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
   height: auto;
   display: block; /* ayuda a evitar espacios extra debajo de la imagen */
 }
+
+
+@media (max-width: 1024px) {
+  .email-illustration-row {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .illustrations {
+    position: static;
+    max-width: 100%;
+  margin-left:0;
+  }
+      
+  .illustrations img {
+    max-height:  120px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
 /* Mobile first adjustments */
 @media (max-width: 600px) {
   .contacto-section{
-    padding: 150px 40px 40px 40px;
+    padding: 200px 40px 40px 40px;
   }
 .email-illustration-row {
     flex-direction: column;
@@ -252,6 +275,7 @@ margin-left:0;
    position: static; /* <--- clave */
     margin-bottom: 20px;
     justify-content: flex-end;
+    margin-top: 120px;
       
   }
 
@@ -261,12 +285,15 @@ margin-left:0;
   }
 
   .string-tie-connector {
-    margin-top: -40px;
+    margin-top: -150px !important;
     margin-bottom: -40px;
   }
 
   .string-tie-connector img {
-    height: 100px; /* ajustá al gusto */
+    height: 50px; /* ajustá al gusto */
+  }
+  .mi-boton{
+    margin-left: 50px;
   }
 }
 
@@ -309,3 +336,4 @@ margin-left:0;
   max-width: 100%;
   display: block;
 }
+

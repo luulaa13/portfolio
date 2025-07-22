@@ -1,4 +1,5 @@
 import Navbar from './Navbar.jsx'
+import Newsletter from './Newsletter.jsx'
 import AboutMe from './AboutMe.jsx'
 import Sticker from './Sticker2.png'
 import StringTie from './image.png'
@@ -29,6 +30,7 @@ const Portfolio = () => {
 
       <section id="newsletter" className="section">
       </section>
+
       <div className="string-tie-connector">
         <img src={StringTie} alt="Decoración string tie"></img>
       </div>

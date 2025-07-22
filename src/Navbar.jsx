@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import '../src/style/Navbar.css'
-import logo from '../src/assets/logo.png';
+
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -12,7 +12,7 @@ const Navbar = () => {
     <>
       <nav className={`navbar ${menuOpen ? 'hidden-navbar' : ''}`}>
         <div className="navbar__logo">
-          <img src={logo} alt="Logo" className="logo-image" />
+         
         </div>
  {/* Eliminado el switch de tema */}
 
