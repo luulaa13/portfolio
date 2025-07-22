@@ -236,14 +236,14 @@ box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
   }
 
 .illustrations {
-  /* Elimina position absolute */
   position: static;
-  /* Opcional: controla el tamaño y margen */
-  max-width: 150px;
+  max-width: 100%;
+margin-left:0;
 }
     
 .illustrations img {
-  max-height:  90px;
+  max-height:  120px;
+  max-width: 100%;
   height: auto;
   display: block;
 }
