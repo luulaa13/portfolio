@@ -289,15 +289,15 @@ margin-left:0;
 .string-tie-connector {
   position: relative;
   z-index: 10;
-  margin-top: -60px; /* sube la imagen para solapar newsletter */
-  margin-bottom: -60px; /* hace que también solape contacto */
   display: flex;
   justify-content: center;
   pointer-events: none;
+  margin-top: -100px; /* o incluso -120px */
+  margin-bottom: -60px;
 }
 
 .string-tie-connector img {
-  height: 180px; /* ajustá según tamaño real del PNG */
+  height: 200px; /* ajustá según tamaño real del PNG */
   max-width: 100%;
   display: block;
 }
