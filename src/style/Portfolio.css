@@ -220,13 +220,13 @@ box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
     gap: 20px;
   }
   .contacto-section h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 1.4;
-    margin-top: 50px;
+    margin-top: 70px;
   }
 
   .contacto-section p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .contacto-section .email {
     position: static;
@@ -240,12 +240,10 @@ box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
   position: static;
   /* Opcional: controla el tamaño y margen */
   max-width: 150px;
-  /* ajusta margen si quieres separarlo del email */
-  margin-left: 20px;
 }
     
 .illustrations img {
-  max-height: 120px;
+  max-height:  90px;
   height: auto;
   display: block;
 }
