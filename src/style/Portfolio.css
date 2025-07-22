@@ -165,6 +165,7 @@ box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
   align-items: center;
   gap: 320px;
   margin-top: 40px;
+  flex-direction: column;
 }
 
 .contacto-section h2 {
@@ -213,6 +214,11 @@ box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
   .contacto-section{
     padding: 100px 40px 40px 40px;
   }
+.email-illustration-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
   .contacto-section h2 {
     font-size: 1.6rem;
     line-height: 1.4;
@@ -228,6 +234,7 @@ box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
     margin-bottom: 5px; /* solo un pelín antes del gif */
     font-size: 30px;
   }
+
 .illustrations {
   /* Elimina position absolute */
   position: static;
@@ -259,7 +266,7 @@ box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
 
 
 .top-right-icons {
-  padding: 60px 20px 120px; /* aumenta el top padding */
+  padding: 60px 0px 120px; /* aumenta el top padding */
   position: absolute;
   top: 30px;
   right: 30px;
