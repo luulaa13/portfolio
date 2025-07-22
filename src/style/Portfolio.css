@@ -286,15 +286,16 @@ margin-left:0;
 
 
 .string-tie-connector {
-  position: relative;
-  margin-top: -80px; /* Ajustá este valor según el tamaño del PNG */
-  z-index: 10;
-  display: flex;
-  justify-content: center;
+ position: absolute;
+  top: calc(100vh - 80px); /* Ajusta esto para que quede entre ambas secciones */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20; /* Por encima de todo */
+  pointer-events: none; /* para que no bloquee clics */
 }
 
 .string-tie-connector img {
-  max-height: 150px; /* o el tamaño de tu PNG */
+  height: 120px; /* o el tamaño que necesites */
   width: auto;
   display: block;
 }
