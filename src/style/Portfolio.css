@@ -152,12 +152,12 @@ box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
 }
 
 .contacto-section .email {
- position: relative;
+  position: relative;
   z-index: 1;
   margin-top: 10px;
   bottom: 20px;
-  left: 40px;
-  font-size: 50px;
+  left: 60px;
+  font-size: 80px;
   line-height: 1.2;
 }
 
@@ -172,14 +172,17 @@ box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
   font-size: 3rem;
   margin-bottom: 20px;
   line-height: 1.2;
+  left: 60px;
   font-family: 'Bebas Neue', sans-serif;
 }
 
 .contacto-section p {
   font-size: 1.2rem;
   margin-bottom: 20px;
+  left: 60px;
 }
 .mi-boton {
+  left: 60px;
   display: inline-block;
   position: relative;
   z-index: 2;
