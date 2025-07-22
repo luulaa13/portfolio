@@ -18,12 +18,14 @@
     padding: 8rem 2rem 6rem; /* solo laterales equilibrados */
     background-color: #F7F4E4;
   }
-/* Última sección antes de contacto */
-#newsletter {
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
+
+ #newsletter {
+  background-color: #f5f0e6;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
   position: relative;
-  z-index: 2;
+  z-index: 10;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* sombra visible hacia abajo */
 }
   
   .hero-content {
