@@ -1,7 +1,7 @@
 
 
 .portfolio-container {
-    background-color: #4D4F3E;
+    background-color: #F7F4E4;
     background-position: center;
     background-attachment: fixed;  /* efecto parallax suave */
     min-height: 100vh;
@@ -24,7 +24,6 @@
   .hero-section {
     position: relative;
     padding: 8rem 2rem 6rem; /* solo laterales equilibrados */
-    background-color: #F7F4E4;
   }
   
   .hero-content {
