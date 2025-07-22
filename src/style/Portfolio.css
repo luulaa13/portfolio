@@ -26,7 +26,7 @@
   border-bottom-right-radius: 60px;
   position: relative;
   z-index: 2;
- box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25); /* solo sombra inferior */
+box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
 }
 
   
