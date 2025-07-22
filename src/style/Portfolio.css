@@ -2,6 +2,7 @@
 
 .portfolio-container {
     overflow-x: hidden;
+     background-color: #4D4F3E;
   }
   
   @media (min-width: 1024px) {
