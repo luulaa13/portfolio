@@ -155,12 +155,10 @@ box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
   position: relative;
   z-index: 1;
   margin-top: 10px;
-  bottom: 20px;
-  left: 60px;
   font-size: 80px;
   line-height: 1.2;
+  /* elimina bottom y left */
 }
-
 .email-illustration-row {
   display: flex;
   align-items: center;
@@ -200,18 +198,17 @@ box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
   color: #800020;
 }
 
-
 .illustrations {
-  position: absolute;
-  bottom: 20px;
-  right: 40px;
+  position: static; /* o simplemente quita esta regla para usar la posición por defecto */
+  margin-left: 20px; /* opcional, para separar del email */
+  max-width: 200px; /* ajusta tamaño si quieres */
 }
 
 .illustrations img {
   max-height: 120px;
   height: auto;
+  display: block; /* ayuda a evitar espacios extra debajo de la imagen */
 }
-
 /* Mobile first adjustments */
 @media (max-width: 600px) {
   .contacto-section{
