@@ -1,11 +1,11 @@
 
 
 .portfolio-container {
-    background-color: black;
+    background-color: #f6f7e4;
     background-position: center;
     background-attachment: fixed;  /* efecto parallax suave */
     min-height: 100vh;
-    color: #f6f7e4;
+    color: #800020;
     padding: 2rem;
     display: flex;
     flex-direction: column;
