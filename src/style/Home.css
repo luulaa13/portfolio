@@ -7,7 +7,7 @@ body {
     width: 100vw; /* Ancho total de la ventana */
     overflow: hidden;
     background-color: #4D4F3E; /* Fondo semitransparente, cambia a gusto */
-    border-top: 1px solid #800020;
+    border-top: 1px solid #4D4F3E;
     padding: 1rem 0;
     box-sizing: border-box;
   }
@@ -16,7 +16,7 @@ body {
     display: inline-block;
     font-weight: bold;
     font-size: 1.2rem;
-    color: #DECBB7;
+    color: #800020;
     white-space: nowrap;
     user-select: none;
   }
