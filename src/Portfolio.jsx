@@ -1,6 +1,7 @@
 import Navbar from './Navbar.jsx'
 import AboutMe from './AboutMe.jsx'
 import Sticker from './Sticker2.png'
+import StringTie from './image.png'
 import '../src/style/Portfolio.css' // Importamos el CSS externo
 import React from 'react'
 import  MovingBanner from './MovingBanner.jsx'
@@ -30,7 +31,9 @@ const Portfolio = () => {
 
       <section id="newsletter" className="section">
       </section>
-   
+      <div className="string-tie-connector">
+        <img src={StringTie} alt="Decoración string tie"></img>
+      </div>
       <section id="contacto" className="contacto-section">
          <div className="top-right-icons">
             <a href="https://www.linkedin.com/in/luciauxui/"><img src={Linkedin}/></a>
