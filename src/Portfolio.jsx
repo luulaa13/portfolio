@@ -35,32 +35,12 @@ const Portfolio = () => {
     <div className="portfolio-container">
       <Navbar />
       <section id="inicio" className="hero-section">
-    
-        <div className="hero-text">
-          <h1>HOLA, SOY LUCIA</h1>
-          <p className="hero-subtitle">
-          Diseño, desarrollo y estrategia digital para crear experiencias únicas que conectan y transforman
-          </p>
-        </div>
 
-        <div className="hero-buttons" ref={buttonsRef}>
-          <a href="#about" className="hero-btn secondary">Conoceme</a>
-          <a href="#proyectos" className="hero-btn primary">Explorar proyectos</a>
-        </div>
-     
-        <div className="scroll-down-arrow">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path d="M12 5v14m0 0l-6-6m6 6l6-6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
-      </div>
-      
       </section>
       <MovingBanner/>
 
       <section id="about" className="about-section">
-         <div className="sticker-wrapper">
-            <img src={Sticker} className="sticker" />
-          </div>
+         
       </section>
 
       <section id="proyectos" className="section">
