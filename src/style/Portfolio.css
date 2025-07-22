@@ -163,10 +163,10 @@ box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
 
 .email-illustration-row {
   display: flex;
-  align-items: center; /* los alinea verticalmente */
-  gap: 20px; /* espacio entre email e ilustración */
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
 }
-
 
 .contacto-section h2 {
   font-size: 3rem;
@@ -230,15 +230,18 @@ box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
     font-size: 30px;
   }
 .illustrations {
-  position: static; /* vuelve al flujo natural */
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
+  /* Elimina position absolute */
+  position: static;
+  /* Opcional: controla el tamaño y margen */
+  max-width: 150px;
+  /* ajusta margen si quieres separarlo del email */
+  margin-left: 20px;
 }
-
+    
 .illustrations img {
-  max-height: 80px;
-  margin-bottom: -30px;
+  max-height: 120px;
+  height: auto;
+  display: block;
 }
 
   .top-right-icons {
