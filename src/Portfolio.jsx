@@ -44,13 +44,14 @@ const Portfolio = () => {
         <a href="mailto:luciauxui@gmail.com" className="mi-boton">
           Enviar correo
         </a>
-
+       <div className="email-illustration-row">
           <p className="email">luciauxui<br/>
             @gmail.com</p>
 
           <div className="illustrations">
             <img src={BackstageGif} alt="Animación Backstage" />
           </div>
+         </div>
       </section>
 
     </div>
