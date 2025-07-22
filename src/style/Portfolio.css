@@ -259,7 +259,7 @@ box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
 
 
 .top-right-icons {
-  padding: 100px 20px 120px; /* aumenta el top padding */
+  padding: 60px 20px 120px; /* aumenta el top padding */
   position: absolute;
   top: 30px;
   right: 30px;
