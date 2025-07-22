@@ -147,7 +147,7 @@ box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
   color: #f6f7e4;
   position: relative;
   z-index: 1;
-  margin-top: -150px; /* sube para cubrir el fondo de los bordes redondeados */
+  margin-top: -210px; /* sube para cubrir el fondo de los bordes redondeados */
   font-family: 'Spectral Bridge', serif;
 }
 
@@ -212,7 +212,7 @@ box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
 /* Mobile first adjustments */
 @media (max-width: 600px) {
   .contacto-section{
-    padding: 100px 40px 40px 40px;
+    padding: 150px 40px 40px 40px;
   }
 .email-illustration-row {
     flex-direction: column;
@@ -260,6 +260,14 @@ margin-left:0;
     height: 36px;
   }
 
+  .string-tie-connector {
+    margin-top: -40px;
+    margin-bottom: -40px;
+  }
+
+  .string-tie-connector img {
+    height: 100px; /* ajustá al gusto */
+  }
 }
 
 
@@ -292,8 +300,8 @@ margin-left:0;
   display: flex;
   justify-content: center;
   pointer-events: none;
-  margin-top: -100px; /* o incluso -120px */
-  margin-bottom: -60px;
+  margin-top: -140px; /* o incluso -120px */
+
 }
 
 .string-tie-connector img {

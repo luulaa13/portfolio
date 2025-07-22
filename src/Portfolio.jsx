@@ -5,8 +5,6 @@ import StringTie from './image.png'
 import '../src/style/Portfolio.css' // Importamos el CSS externo
 import React from 'react'
 import  MovingBanner from './MovingBanner.jsx'
-import { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
 import Linkedin from '../src/assets/linkedin.svg';
 import Dribble from '../src/assets/dribble.svg';
 import Github from '../src/assets/github.svg';
