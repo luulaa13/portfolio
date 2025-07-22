@@ -1,6 +1,6 @@
 import Navbar from './Navbar.jsx'
 import AboutMe from './AboutMe.jsx'
-import Sticker from './Sticker.png'
+import Sticker from './Sticker2.png'
 import '../src/style/Portfolio.css' // Importamos el CSS externo
 import React from 'react'
 import  MovingBanner from './MovingBanner.jsx'
