@@ -57,7 +57,7 @@ const Portfolio = () => {
       </section>
       <MovingBanner/>
 
-      <section id="about" className="section">
+      <section id="about" className="about-section">
          <div className="sticker-wrapper">
             <img src={Sticker} className="sticker" />
           </div>
