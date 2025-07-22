@@ -2,15 +2,7 @@
 
 .portfolio-container {
     background-color: #F7F4E4;
-    background-position: center;
-    background-attachment: fixed;  /* efecto parallax suave */
-    min-height: 100vh;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    overflow-x: hidden;
   }
   
   @media (min-width: 1024px) {
@@ -21,10 +13,18 @@
     }
   }
   
-  .hero-section {
+  .section {
     position: relative;
     padding: 8rem 2rem 6rem; /* solo laterales equilibrados */
+    background-color: #F7F4E4;
   }
+/* Última sección antes de contacto */
+#newsletter {
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  position: relative;
+  z-index: 2;
+}
   
   .hero-content {
     display: flex;
@@ -136,14 +136,11 @@
 }
 
 .contacto-section {
-  border-radius : 40px;
   background-color: #4D4F3E;
   color: #f6f7e4;
-  padding: 60px 40px 180px 40px; /* top, right, bottom, left */
-  width: 100%;
-  max-width: 1400px;
+   padding: 120px 20px;
   position: relative;
-  text-align: left;
+  z-index: 1;
   font-family: 'Spectral Bridge', serif;
 }
 
