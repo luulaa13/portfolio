@@ -19,14 +19,15 @@
     background-color: #f5f0e6;
   }
 
- #newsletter {
+#newsletter {
   background-color: #f5f0e6;
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
   position: relative;
-  z-index: 10;
-   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25); /* solo sombra inferior */
+  z-index: 2;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
 }
+
   
   .hero-content {
     display: flex;
@@ -137,21 +138,15 @@
 
 }
 
-.contacto-background {
-  background-color: #4D4F3E; /* el mismo color que .contacto-section */
-  height: 300px; /* ajustá según necesidad */
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  z-index: 0;
-}
+
 
 .contacto-section {
   background-color: #4D4F3E;
   color: #f6f7e4;
-   padding: 120px 20px;
+  padding: 120px 20px;
   position: relative;
   z-index: 1;
+  margin-top: -60px; /* sube para cubrir el fondo de los bordes redondeados */
   font-family: 'Spectral Bridge', serif;
 }
 
