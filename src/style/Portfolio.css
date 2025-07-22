@@ -285,17 +285,19 @@ margin-left:0;
 }
 
 
+/* El conector visual */
 .string-tie-connector {
- position: absolute;
-  top: calc(100vh - 80px); /* Ajusta esto para que quede entre ambas secciones */
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 20; /* Por encima de todo */
-  pointer-events: none; /* para que no bloquee clics */
+  position: relative;
+  z-index: 10;
+  margin-top: -60px; /* sube la imagen para solapar newsletter */
+  margin-bottom: -60px; /* hace que también solape contacto */
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
 }
 
 .string-tie-connector img {
-  height: 120px; /* o el tamaño que necesites */
-  width: auto;
+  height: 180px; /* ajustá según tamaño real del PNG */
+  max-width: 100%;
   display: block;
 }
