@@ -3,6 +3,7 @@
 .portfolio-container {
     overflow-x: hidden;
      position: relative;
+     background-color: #f5f0e6;
   }
   
   @media (min-width: 1024px) {
@@ -146,7 +147,7 @@
   padding: 120px 20px;
   position: relative;
   z-index: 1;
-  margin-top: -60px; /* sube para cubrir el fondo de los bordes redondeados */
+  margin-top: -40px; /* sube para cubrir el fondo de los bordes redondeados */
   font-family: 'Spectral Bridge', serif;
 }
 
