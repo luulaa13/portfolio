@@ -2,7 +2,7 @@
 
 .portfolio-container {
     overflow-x: hidden;
-     background-color: #4D4F3E;
+     position: relative;
   }
   
   @media (min-width: 1024px) {
@@ -16,7 +16,7 @@
   .section {
     position: relative;
     padding: 8rem 2rem 6rem; /* solo laterales equilibrados */
-    background-color: #F7F4E4;
+    background-color: #f5f0e6;
   }
 
  #newsletter {
@@ -25,7 +25,7 @@
   border-bottom-right-radius: 60px;
   position: relative;
   z-index: 10;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* sombra visible hacia abajo */
+   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25); /* solo sombra inferior */
 }
   
   .hero-content {
@@ -135,6 +135,15 @@
     text-align: center;
   }
 
+}
+
+.contacto-background {
+  background-color: #4D4F3E; /* el mismo color que .contacto-section */
+  height: 300px; /* ajustá según necesidad */
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
 }
 
 .contacto-section {
