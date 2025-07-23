@@ -28,7 +28,8 @@ const Portfolio = () => {
       <section id="proyectos" className="section">
       </section>
 
-     <Newsletter/>
+      <section id="newsletter" className="section">
+      </section>
 
       <div className="string-tie-connector">
         <img src={StringTie} alt="Decoración string tie"></img>
