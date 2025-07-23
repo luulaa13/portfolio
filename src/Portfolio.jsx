@@ -2,6 +2,7 @@ import Navbar from './Navbar.jsx'
 import Newsletter from './Newsletter.jsx'
 import AboutMe from './AboutMe.jsx'
 import Sticker from './Sticker2.png'
+import Ticket from './ticket.png'
 import StringTie from './image.png'
 import '../src/style/Portfolio.css' // Importamos el CSS externo
 import React from 'react'
@@ -23,9 +24,8 @@ const Portfolio = () => {
       <MovingBanner/>
 
       <section id="about" className="section">
-         <div className="sticker-wrapper">
           <img src={Sticker} alt="Sticker decorativo" className="sticker" />
-        </div>
+          <img src={Ticket} alt="Skills ticket" className="sticker ticket" />
       </section>
 
       <section id="proyectos" className="section">
