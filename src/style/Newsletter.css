@@ -1,11 +1,10 @@
-
 .newsletter-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 4rem;
-  padding: 2rem;
   flex-wrap: wrap;
+  padding: 2rem;
 }
 
 .columna-izquierda {
@@ -14,6 +13,56 @@
   min-width: 300px;
 }
 
+.texto-secreto {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+}
+
+.flecha {
+  width: 40px;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  animation: bounce 1.5s infinite;
+}
+
+/* Animación suave de rebote */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.columna-derecha {
+  flex: 1;
+  min-width: 300px;
+}
+
+.lista-posts {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-posts li {
+  margin-bottom: 1.5rem;
+}
+
+.lista-posts p {
+  margin: 0.2rem 0 0;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .newsletter-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .flecha {
+    display: none; /* Puedes ocultarla en móviles si no encaja bien */
+  }
+}
 
 .contenedor {
   width: 50vw;
