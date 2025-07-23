@@ -424,3 +424,17 @@ margin-left:0;
   transition: transform 0.3s ease;
 }
 
+
+@media (max-width: 600px) {
+  .sticker, .ticket {
+    position: static;
+    width: 70%;
+    margin: 10px auto;
+    transform: none;
+    opacity: 1;
+    filter: none;
+    box-shadow: none;
+    z-index: auto;
+  }
+}
+
