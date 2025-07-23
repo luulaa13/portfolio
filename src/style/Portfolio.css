@@ -360,7 +360,7 @@ margin-left:0;
   color: #f6f7e4;
   background-color: #800020; /* Fondo borgoña oscuro justo detrás del texto */
   padding: 5px 10px;         /* Ajusta para espacio alrededor del texto */
-  transform: rotate(-3deg);  /* Gira levemente el texto, cambia el ángulo si quieres */
+  transform: rotate(-4deg);  /* Gira levemente el texto, cambia el ángulo si quieres */
   transform-origin: center;  /* Punto de rotación en el centro */
 /* Sombra potente y suave a la vez */
   box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.4);
