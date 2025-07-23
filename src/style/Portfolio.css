@@ -399,3 +399,16 @@ margin-left:0;
     padding: 60px 0;
   }
 }
+
+
+.sticker-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Asegura que el wrapper ocupe todo el alto del section */
+}
+
+.sticker {
+  max-width: 80%;  /* Asegura que no se desborde */
+  height: auto;
+}
