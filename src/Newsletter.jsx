@@ -13,12 +13,8 @@ const CartaInteractiva = () => {
   <div className="newsletter-wrapper">
     {/* Columna izquierda */}
     <div className="columna-izquierda">
-      <p className="texto-secreto">💌 Pulsa para abrir la carta secreta</p>
-      <img
-        src="/flecha.gif"
-        alt="Flecha apuntando al sobre"
-        className="flecha"
-      />
+      <p className="texto-secreto">Pulsa para abrir la carta secreta</p>
+
       <div
         className="contenedor"
         id="AbrirContenedor"
