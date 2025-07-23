@@ -410,6 +410,6 @@ margin-left:0;
 }
 
 .sticker {
-  max-width: 70%;  /* Asegura que no se desborde */
+  max-width: 40%;  /* Imagen más pequeña */
   height: auto;
 }
