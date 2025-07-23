@@ -30,8 +30,10 @@ const Portfolio = () => {
       </section>
 
       <section id="newsletter" className="section">
-          <p class="gracias">GRACIAS</p>
-          <p class="conectar">Estoy deseando conectar contigo</p>
+          <div class="newsletter-message">
+            <p class="gracias">GRACIAS</p>
+            <p class="conectar">Estoy deseando conectar contigo</p>
+          </div>
       </section>
 
       <div className="string-tie-connector">
