@@ -400,16 +400,27 @@ margin-left:0;
   }
 }
 
-
-.sticker-wrapper {
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%; /* Asegura que el wrapper ocupe todo el alto del section */
-}
-
+/* Sticker principal: foco centrado */
 .sticker {
-  max-width: 40%;  /* Imagen más pequeña */
-  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 220px;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
+
+/* Sticker secundario: se asoma detrás */
+.ticket {
+  position: absolute;
+  width: 140px;
+  top: 45%;
+  left: 35%;
+  opacity: 0.7;
+  filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.15));
+  transform: translate(-20%, -10%) rotate(-10deg);
+  z-index: 5;
+  transition: transform 0.3s ease;
+}
+
