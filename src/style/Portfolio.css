@@ -339,7 +339,7 @@ margin-left:0;
 
 
 .newsletter-message {
-  bottom: 30px; /* Usa 0 si quieres que esté completamente pegado */
+  bottom: 30px;
   width: 100%;
   text-align: center;
   padding: 100px 0;
@@ -354,14 +354,48 @@ margin-left:0;
 }
 
 .conectar {
-  display: inline-block;      /* Hace que el fondo y rotación solo cubran el texto */
+  display: inline-block;
   font-size: 40px;
   margin: 0;
   color: #f6f7e4;
-  background-color: #800020; /* Fondo borgoña oscuro justo detrás del texto */
-  padding: 5px 10px;         /* Ajusta para espacio alrededor del texto */
-  transform: rotate(-4deg);  /* Gira levemente el texto, cambia el ángulo si quieres */
-  transform-origin: center;  /* Punto de rotación en el centro */
-/* Sombra potente y suave a la vez */
+  background-color: #800020;
+  padding: 5px 10px;
+  transform: rotate(-4deg);
+  transform-origin: center;
   box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Tablet (≤ 1024px) */
+@media (max-width: 1024px) {
+  .gracias {
+    font-size: 60px;
+  }
+
+  .conectar {
+    font-size: 32px;
+    padding: 4px 8px;
+    transform: rotate(-3deg);
+  }
+
+  .newsletter-message {
+    padding: 80px 0;
+  }
+}
+
+/* Móviles (≤ 600px) */
+@media (max-width: 600px) {
+  .gracias {
+    font-size: 42px;
+  }
+
+  .conectar {
+    font-size: 24px;
+    padding: 3px 6px;
+    transform: rotate(-2deg);
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .newsletter-message {
+    padding: 60px 0;
+  }
 }
