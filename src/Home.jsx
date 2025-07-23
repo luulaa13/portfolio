@@ -37,7 +37,7 @@ export default function App() {
         <h1>Lucia Garcia</h1>
         <p className="subtitle">Software Developer & UX/UI Designer</p>
         <Link to="/portfolio" className="portfolio-button">
-         ACCEDER
+         VER PORTFOLIO
         </Link>
       </main>
     </>
