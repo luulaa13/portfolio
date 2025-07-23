@@ -15,13 +15,13 @@
 
 .texto-secreto {
   position: absolute;
-  top: -80px;              /* más arriba */
+  top: -150px;              /* más arriba */
   left: 40px;              /* más margen izquierdo */
   z-index: 100;
-  font-size: 1.8rem;       /* más grande */
+  font-size: 40px;       /* más grande */
   font-weight: 600;
   color: #800020;          /* burdeos */
-  transform: rotate(-3deg); /* un pelín torcido */
+  transform: rotate(-8deg); /* un pelín torcido */
   font-family: 'Brush Script MT', cursive; /* opcional si quieres más estilo manuscrito */
 }
 
