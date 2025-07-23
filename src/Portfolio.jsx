@@ -23,6 +23,7 @@ const Portfolio = () => {
       <MovingBanner/>
 
       <section id="about" className="section">
+
       </section>
 
       <section id="proyectos" className="section">
