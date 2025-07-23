@@ -13,3 +13,141 @@
   position: relative;
   min-width: 300px;
 }
+
+
+.contenedor {
+  width: 50vw;
+  max-width: 600px;
+  aspect-ratio: 3 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto; /* centra horizontalmente */
+  cursor: pointer;
+  margin-left: 400px;
+}
+
+
+
+.superior {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 28vw solid transparent;
+  border-right: 28vw solid transparent;
+  border-top: 18vw solid #4d0013;
+  border-bottom: 18vw solid transparent;
+  transition: transform .75s;
+  transform-origin: top;
+  z-index: 30; /* asegúrate que tenga z-index */
+}
+
+
+
+.mensaje {
+ position: absolute;
+  padding: 1.5rem;
+  line-height: 1.5rem;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 22px;
+  background: #fff;
+  width: 890px;
+  height: 450px;
+  top: 0;
+  left: 0;
+  z-index: 10; /* menor que .superior inicialmente */
+  /* Añadí opacity para animar la aparición */
+  opacity: 0;
+  /* Agrego transición también para opacity */
+  transition: transform 0.75s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.mensaje:before {
+  content: "";
+  top: 12px;
+  left: 12px; 
+  right: 12px; 
+}
+
+.mensaje p{
+  position: relative;
+  top: -10px;
+  font-size: 1.2rem;
+}
+
+.carta {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 28vw solid #800020;   /* burdeos principal */
+  border-right: 28vw solid #990033;  /* un poco más claro para contraste */
+  border-top: 18vw solid transparent;
+  border-bottom: 18vw solid #990033; /* un poco más oscuro para sombra */
+  z-index: 20;
+}
+
+
+
+
+/* Cuando se abre el sobre */
+.abrir-superior {
+  transform: rotateX(180deg);
+  /* Bajar z-index para que el mensaje se muestre encima */
+  z-index: 0 !important; /* se baja al abrir */
+  transition-delay: 0s; /* quita delay para el z-index cuando abre */
+}
+
+.abrir-mensaje {
+  transform: translateY(-100px);
+  /* Cuando está abierto, mostrar el mensaje */
+  opacity: 1;
+  /* subir z-index para asegurarse */
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+
+  .mensaje:before {
+      content: "";
+      border-style: dotted;
+      position: absolute;
+      top: 12px;
+      left: 12px; 
+      right: 12px; 
+      bottom: 45px; 
+  }
+  
+  .mensaje p{
+      position: relative;
+      top: -15px;
+      font-size: 1rem;
+  }
+}
+
+
+/* 📱 Ajuste para móviles */
+@media (max-width: 600px) {
+  .contenedor {
+    width: 90vw;
+    aspect-ratio: 3 / 2;
+  }
+
+  .carta {
+    border-left: 45vw solid #f5f5dc;
+    border-right: 45vw solid #e6decf;
+    border-top: 32vw solid transparent;
+    border-bottom: 32vw solid #f5f5dc;
+  }
+
+  .superior {
+    border-left: 45vw solid transparent;
+    border-right: 45vw solid transparent;
+    border-top: 32vw solid #800020;
+    border-bottom: 32vw solid transparent;
+  }
+}
