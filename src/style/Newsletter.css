@@ -7,3 +7,9 @@
   padding: 2rem;
   flex-wrap: wrap;
 }
+
+.columna-izquierda {
+  flex: 1;
+  position: relative;
+  min-width: 300px;
+}
