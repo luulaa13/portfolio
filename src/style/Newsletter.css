@@ -15,14 +15,13 @@
 
 .texto-secreto {
   position: absolute;
-  top: -150px;              /* más arriba */
+  top: -200px;              /* más arriba */
   left: 40px;              /* más margen izquierdo */
   z-index: 100;
   font-size: 40px;       /* más grande */
   font-weight: 600;
   color: #800020;          /* burdeos */
   transform: rotate(-8deg); /* un pelín torcido */
-  font-family: 'Brush Script MT', cursive; /* opcional si quieres más estilo manuscrito */
 }
 
 .flecha {
@@ -84,10 +83,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  border-left: 24vw solid transparent;
-  border-right: 24vw solid transparent;
-  border-top: 16vw solid #4d0013;
-  border-bottom: 16vw solid transparent;
+  border-left: 16vw solid transparent;
+  border-right: 16vw solid transparent;
+  border-top: 10vw solid #4d0013;
+  border-bottom: 10vw solid transparent;
   transition: transform .75s;
   transform-origin: top;
   z-index: 30; /* asegúrate que tenga z-index */
@@ -104,7 +103,7 @@
   font-family: 'Brush Script MT', cursive;
   font-size: 22px;
   background: #fff;
-  width: 600px;
+  width: 680px;
   height: 450px;
   top: 0;
   left: 0;
@@ -134,10 +133,10 @@
   left: 0;
   width: 0;
   height: 0;
-  border-left: 24vw solid #800020;   /* burdeos principal */
-  border-right: 24vw solid #990033;  /* un poco más claro para contraste */
-  border-top: 16vw solid transparent;
-  border-bottom: 16vw solid #990033; /* un poco más oscuro para sombra */
+  border-left: 16vw solid #800020;   /* burdeos principal */
+  border-right: 16vw solid #990033;  /* un poco más claro para contraste */
+  border-top: 10vw solid transparent;
+  border-bottom: 10vw solid #990033; /* un poco más oscuro para sombra */
   z-index: 20;
 }
 
