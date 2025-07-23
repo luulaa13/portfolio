@@ -49,13 +49,17 @@ h1 {
 }
 
 .intro {
-  font-family: 'Playfair Display', serif;
   font-size: 50px;
   font-weight: 500;
   margin: 5px 0;
   text-transform: uppercase;
   color: #0056b3;
   margin: 10px 0 0;
+}
+
+.subtitle{
+   white-space: nowrap; /* Evita que el texto haga salto de línea */
+   font-size: 20px;
 }
 
 
