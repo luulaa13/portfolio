@@ -13,14 +13,16 @@
   min-width: 300px;
 }
 
-/* Texto y flecha se posicionan encima */
 .texto-secreto {
   position: absolute;
-  top: -40px;
-  left: 10px;
+  top: -80px;              /* más arriba */
+  left: 40px;              /* más margen izquierdo */
   z-index: 100;
-  font-size: 1.2rem;
+  font-size: 1.8rem;       /* más grande */
   font-weight: 600;
+  color: #800020;          /* burdeos */
+  transform: rotate(-3deg); /* un pelín torcido */
+  font-family: 'Brush Script MT', cursive; /* opcional si quieres más estilo manuscrito */
 }
 
 .flecha {
