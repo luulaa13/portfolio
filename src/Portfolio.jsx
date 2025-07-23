@@ -23,7 +23,9 @@ const Portfolio = () => {
       <MovingBanner/>
 
       <section id="about" className="section">
-
+         <div className="sticker-wrapper">
+          <img src={Sticker} alt="Sticker decorativo" className="sticker" />
+        </div>
       </section>
 
       <section id="proyectos" className="section">
