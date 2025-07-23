@@ -406,25 +406,26 @@ margin-left:0;
   height: 100%;
   max-width: 900px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;  /* Cambia a columna para apilar verticalmente */
-  align-items: center;     /* Centra horizontalmente */
+  /* no hace falta flex aquí */
+  /* puedes usar display block por defecto */
 }
 
 /* Sticker principal */
 .main-sticker {
+  position: relative;  /* al frente */
   width: 400px;
   z-index: 10;
-  position: relative; /* mantén relativo para poder usar z-index */
 }
 
-/* Sticker secundario debajo y sobresaliendo */
+/* Sticker secundario detrás y asomando un poco */
 .ticket {
-  position: relative; /* quitamos absolute para que quede en flujo */
+  position: absolute;  /* posiciona respecto a stickers-wrapper */
   width: 140px;
-  margin-top: -40px;  /* negativo para que sobresalga encima del principal */
+  top: 20px;    /* un poco más arriba o abajo para asomar */
+  left: 30px;   /* desplaza a la derecha o izquierda para que se vea */
   transform: rotate(-10deg);
   z-index: 5;
   transition: transform 0.3s ease;
+  opacity: 0.8;  /* un poco translúcido para que no compita */
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
-
