@@ -20,12 +20,6 @@
   max-width: 600px;
   aspect-ratio: 3 / 2;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  margin: 0 auto; /* centra horizontalmente */
-  cursor: pointer;
-  margin-left: 400px;
 }
 
 
@@ -34,10 +28,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  border-left: 28vw solid transparent;
-  border-right: 28vw solid transparent;
-  border-top: 18vw solid #4d0013;
-  border-bottom: 18vw solid transparent;
+  border-left: 24vw solid transparent;
+  border-right: 24vw solid transparent;
+  border-top: 16vw solid #4d0013;
+  border-bottom: 16vw solid transparent;
   transition: transform .75s;
   transform-origin: top;
   z-index: 30; /* asegúrate que tenga z-index */
@@ -84,10 +78,10 @@
   left: 0;
   width: 0;
   height: 0;
-  border-left: 28vw solid #800020;   /* burdeos principal */
-  border-right: 28vw solid #990033;  /* un poco más claro para contraste */
-  border-top: 18vw solid transparent;
-  border-bottom: 18vw solid #990033; /* un poco más oscuro para sombra */
+  border-left: 24vw solid #800020;   /* burdeos principal */
+  border-right: 24vw solid #990033;  /* un poco más claro para contraste */
+  border-top: 16vw solid transparent;
+  border-bottom: 16vw solid #990033; /* un poco más oscuro para sombra */
   z-index: 20;
 }
 
