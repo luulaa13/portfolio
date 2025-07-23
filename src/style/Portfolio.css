@@ -400,34 +400,31 @@ margin-left:0;
   }
 }
 
-/* Contenedor para manejar padding y centrado */
 .stickers-wrapper {
   position: relative;
-  padding: 60px 20px; /* separa del borde superior e lados */
+  padding: 60px 20px;
   height: 100%;
   max-width: 900px;
-  margin: 0 auto; /* centra horizontalmente */
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;  /* Cambia a columna para apilar verticalmente */
+  align-items: center;     /* Centra horizontalmente */
 }
 
 /* Sticker principal */
 .main-sticker {
-  position: relative;
   width: 400px;
   z-index: 10;
+  position: relative; /* mantén relativo para poder usar z-index */
 }
 
-/* Sticker secundario detrás */
+/* Sticker secundario debajo y sobresaliendo */
 .ticket {
-  position: absolute;
+  position: relative; /* quitamos absolute para que quede en flujo */
   width: 140px;
-  top: 30%;
-  left: 10%;
+  margin-top: -40px;  /* negativo para que sobresalga encima del principal */
   transform: rotate(-10deg);
   z-index: 5;
   transition: transform 0.3s ease;
 }
-
 
