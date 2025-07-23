@@ -430,20 +430,4 @@ margin-left:0;
   transition: transform 0.3s ease;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  .stickers-wrapper {
-    flex-direction: column;
-    padding: 20px 10px;
-  }
 
-  .main-sticker, .ticket {
-    position: static;
-    width: 70%;
-    margin: 10px auto;
-    transform: none;
-    opacity: 1;
-    filter: none;
-    box-shadow: none;
-  }
-}
