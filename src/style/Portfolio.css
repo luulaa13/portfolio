@@ -399,33 +399,179 @@ margin-left:0;
     padding: 60px 0;
   }
 }
-
+/* CONTENEDOR */
 .stickers-wrapper {
   position: relative;
-  padding: 60px 20px;
-  height: 100%;
+  width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  /* no hace falta flex aquí */
-  /* puedes usar display block por defecto */
+  padding-top: 150px;
+  height: 500px;
 }
 
-/* Sticker principal */
+/* STICKER PRINCIPAL: sin animación */
 .main-sticker {
-  position: relative;  /* al frente */
-  width: 400px;
+  position: relative;
+  width: 450px;
   z-index: 10;
+  display: block;
+  margin: 0 auto;
 }
 
-/* Sticker secundario detrás y asomando un poco */
+/* TODOS LOS STICKERS */
+.sticker:not(.main-sticker) {
+  position: absolute;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  opacity: 1;
+}
+
 .ticket {
-  position: absolute;  /* posiciona respecto a stickers-wrapper */
-  width: 140px;
-  top: 20px;    /* un poco más arriba o abajo para asomar */
-  left: 30px;   /* desplaza a la derecha o izquierda para que se vea */
-  transform: rotate(-10deg);
+  top: 80px;
+  left: 55%;
+  width: 550px;
+  transform: translateX(-50%) rotate(-8deg) translateY(30px) scale(0.9);
   z-index: 5;
-  transition: transform 0.3s ease;
-  opacity: 0.8;  /* un poco translúcido para que no compita */
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.camara {
+  top: 130px;
+  left: calc(40% - 20px);
+  width: 300px;
+  transform: rotate(5deg) translateY(-15px) scale(0.9);
+  z-index: 4;
+}
+
+.post {
+  top: 50%;
+  left: 50%;
+  width: 460px;
+  transform: translate(-50%, -15%) rotate(1deg) scale(0.9);
+  z-index: 3;
+}
+
+.qr {
+  top: 15%;
+  left: calc(50% - 350px);
+  width: 400px;
+  transform: rotate(-8deg) translateY(10px) scale(0.9);
+  z-index: 2;
+}
+
+
+.gif {
+  top: 280px;
+  left: calc(50% - 200px);
+  width: 300px;
+  transform: rotate(12deg) translateY(10px) scale(0.9);
+  z-index: 1;
+}
+
+.exclamation{
+  z-index: 1;
+  top: 100px;
+  left: calc(50% - 200px);
+  width: 300px;
+  transform: rotate(12deg) translateY(10px) scale(0.9);
+}
+
+.stickers-wrapper.show .ticket {
+  transform: translate(-750px, 250px) rotate(-12deg) scale(1);
+}
+
+.stickers-wrapper.show .camara {
+  transform: translate(400px, -150px) rotate(10deg) scale(1.5);
+}
+
+
+.stickers-wrapper.show .post {
+  transform: translate(180px, 150px) rotate(20deg) scale(1.2);
+}
+
+.stickers-wrapper.show .qr {
+  transform: translate(-350px, -150px) rotate(-12deg) scale(1.2);
+}
+
+.stickers-wrapper.show .gif {
+  transform: translate(500px, -100px) rotate(15deg) scale(1);
+}
+
+.stickers-wrapper.show .exclamation {
+  transform: translate(-150px, -80px) rotate(-35deg) scale(1.2);
+}
+@media (max-width: 600px) {
+  .stickers-wrapper {
+    padding-top: 50px;
+    height: auto; /* que crezca según el contenido */
+    min-height: 400px; /* o el valor que te dé buen equilibrio */
+  }
+  .main-sticker {
+    width: 250px;
+  }
+
+  .ticket {
+    top: 10%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, 0) rotate(-4deg) scale(0.85);
+  }
+
+  .camara {
+    top: 25%;
+    left: 55%;
+    width: 60%;
+    transform: translate(-50%, 0) rotate(3deg) scale(0.85);
+  }
+
+  .post {
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    transform: translate(-50%, -50%) rotate(1deg) scale(0.85);
+  }
+
+  .qr {
+    top: 5%;
+    left: 5%;
+    width: 40%;
+    transform: rotate(-6deg) scale(0.85);
+  }
+
+  .gif {
+    top: 60%;
+    left: 60%;
+    width: 45%;
+    transform: rotate(10deg) scale(0.85);
+  }
+
+  .exclamation {
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    transform: rotate(5deg) scale(0.85);
+  }
+
+  /* TRANSFORMACIONES AL MOSTRAR (más suaves en móvil) */
+  .stickers-wrapper.show .ticket {
+    transform: translate(-20px, 40px) rotate(-8deg) scale(1);
+  }
+
+  .stickers-wrapper.show .camara {
+    transform: translate(40px, -30px) rotate(8deg) scale(1);
+  }
+
+  .stickers-wrapper.show .post {
+    transform: translate(0px, 50px) rotate(5deg) scale(1);
+  }
+
+  .stickers-wrapper.show .qr {
+    transform: translate(-30px, -40px) rotate(-8deg) scale(1);
+  }
+
+  .stickers-wrapper.show .gif {
+    transform: translate(50px, -20px) rotate(12deg) scale(1);
+  }
+
+  .stickers-wrapper.show .exclamation {
+    transform: translate(-30px, -30px) rotate(-15deg) scale(1);
+  }
 }
