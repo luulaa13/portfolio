@@ -1,14 +1,9 @@
 import Navbar from './Navbar.jsx'
 import Newsletter from './Newsletter.jsx'
 import AboutMe from './AboutMe.jsx'
-import Sticker from '../src/assets/Sticker2.png'
-import Ticket from '../src/assets/ticket.png'
-import StringTie from '../src/assets/image.png'
-import Camara from '../src/assets/camara.png'
-import Star from '../src/assets/giphy.gif'
+import StringTie from '../src/assets/image.png
 import Post from '../src/assets/post.png'
 import QR from '../src/assets/qr.png'
-import Exclamation from '../src/assets/exclamation.gif'
 import '../src/style/Portfolio.css' // Importamos el CSS externo
 import React from 'react'
 import  MovingBanner from './MovingBanner.jsx'
