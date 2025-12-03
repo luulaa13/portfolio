@@ -1,7 +1,7 @@
 import Navbar from './Navbar.jsx'
 import Newsletter from './Newsletter.jsx'
 import AboutMe from './AboutMe.jsx'
-import StringTie from '../src/assets/image.png
+import StringTie from '../src/assets/image.png'
 import Post from '../src/assets/post.png'
 import QR from '../src/assets/qr.png'
 import '../src/style/Portfolio.css' // Importamos el CSS externo
