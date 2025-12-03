@@ -56,18 +56,7 @@ const Portfolio = () => {
       <MovingBanner/>
 
       <section id="about" className="section" >
-      <div
-        className={`stickers-wrapper ${showStickers ? "show" : ""}`}
-        ref={wrapperRef}
-      >
-          <img src={Sticker} alt="Sticker decorativo" className="sticker main-sticker" />
-          <img src={Ticket} alt="Skills ticket" className="sticker ticket" />
-          <img src={Exclamation} alt="Exclamacion icono" className="sticker exclamation" />
-          <img src={Camara} alt="Foto camara vintage" className="sticker camara" />
-          <img src={Post} alt="About post" className="sticker post" />
-          <img src={QR} alt="qr" className="sticker qr" />
-          <img src={Star} alt="Gif decoracion" className="sticker gif" />
-        </div>
+      
       </section>
 
       <section id="proyectos" className="section">
