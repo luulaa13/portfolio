@@ -100,8 +100,8 @@ function Band({ maxSpeed = 50, minSpeed = 10, isMobile }) {
       curve.points[3].copy(fixed.current.translation())
      
       const points = curve.getPoints(32)
-     points.pop() // elimina el último punto (el conflictivo)
-     band.current.geometry.setPoints(points)
+      points.splice(0, 2) // elimina 2 puntos del extremo de la card
+      band.current.geometry.setPoints(points)
 
       ang.copy(card.current.angvel())
       rot.copy(card.current.rotation())
