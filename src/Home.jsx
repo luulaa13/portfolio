@@ -23,7 +23,7 @@ export default function App() {
       
         <ambientLight intensity={1.2} />
       
-        <Physics interpolate gravity={[0, -40, 0]} timeStep={1 / 60}>
+        <Physics interpolate gravity={[0, -30, 0]} timeStep={1 / 60}>
           <Band isMobile={isMobile} />
         </Physics>
       
@@ -50,7 +50,7 @@ export default function App() {
 function Band({ maxSpeed = 50, minSpeed = 10, isMobile }) {
   const band = useRef(), fixed = useRef(), j1 = useRef(), j2 = useRef(), j3 = useRef(), card = useRef()
   const vec = new THREE.Vector3(), ang = new THREE.Vector3(), rot = new THREE.Vector3(), dir = new THREE.Vector3()
-  const segmentProps = { type: 'dynamic', canSleep: true, colliders: false, angularDamping: 4, linearDamping: 4 }
+  const segmentProps = { type: 'dynamic', canSleep: true, colliders: false, angularDamping: 8, linearDamping: 4 }
   const { nodes, materials } = useGLTF(tagModel)
   const texture = useTexture(bandTexture)
   const { width, height } = useThree((state) => state.size)
