@@ -14,7 +14,8 @@ useTexture.preload(bandTexture)
 
 export default function App() {
   const isMobile = window.innerWidth <= 768
- 
+  
+  const [menuOpen, setMenuOpen] = useState(false)
   
   return (
     <>
