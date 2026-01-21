@@ -19,16 +19,19 @@ export default function App() {
   return (
     <>
       <Canvas camera={{ position: isMobile ? [0, 0, 15] : [0, 0, 13], fov: 25 }}>
-        <ambientLight intensity={Math.PI} />
+        <color attach="background" args={['#fafafa']} />
+      
+        <ambientLight intensity={1.2} />
+      
         <Physics interpolate gravity={[0, -40, 0]} timeStep={1 / 60}>
           <Band isMobile={isMobile} />
         </Physics>
-        <Environment background blur={0.75}>
-          <color attach="background" args={['black']} />
+      
+        <Environment blur={0.75}>
           <Lightformer intensity={2} color="white" position={[0, -1, 5]} rotation={[0, 0, Math.PI / 3]} scale={[100, 0.1, 1]} />
           <Lightformer intensity={3} color="white" position={[-1, -1, 1]} rotation={[0, 0, Math.PI / 3]} scale={[100, 0.1, 1]} />
           <Lightformer intensity={3} color="white" position={[1, 1, 1]} rotation={[0, 0, Math.PI / 3]} scale={[100, 0.1, 1]} />
-          <Lightformer intensity={10} color="white" position={[-10, 0, 14]} rotation={[0, Math.PI / 2, Math.PI / 3]} scale={[100, 10, 1]} />
+          <Lightformer intensity={8} color="white" position={[-10, 0, 14]} rotation={[0, Math.PI / 2, Math.PI / 3]} scale={[100, 10, 1]} />
         </Environment>
       </Canvas>
 
@@ -47,7 +50,7 @@ export default function App() {
 function Band({ maxSpeed = 50, minSpeed = 10, isMobile }) {
   const band = useRef(), fixed = useRef(), j1 = useRef(), j2 = useRef(), j3 = useRef(), card = useRef()
   const vec = new THREE.Vector3(), ang = new THREE.Vector3(), rot = new THREE.Vector3(), dir = new THREE.Vector3()
-  const segmentProps = { type: 'dynamic', canSleep: true, colliders: false, angularDamping: 2, linearDamping: 2 }
+  const segmentProps = { type: 'dynamic', canSleep: true, colliders: false, angularDamping: 4, linearDamping: 4 }
   const { nodes, materials } = useGLTF(tagModel)
   const texture = useTexture(bandTexture)
   const { width, height } = useThree((state) => state.size)
@@ -137,14 +140,13 @@ function Band({ maxSpeed = 50, minSpeed = 10, isMobile }) {
             onPointerDown={(e) => (e.target.setPointerCapture(e.pointerId), drag(new THREE.Vector3().copy(e.point).sub(vec.copy(card.current.translation()))))}
           >
             <mesh geometry={nodes.card.geometry}>
-              <meshPhysicalMaterial
-                map={materials.base.map}
-                map-anisotropy={16}
-                clearcoat={1}
-                clearcoatRoughness={0.15}
-                roughness={0.3}
-                metalness={0.5}
-              />
+            <meshPhysicalMaterial
+                  map={materials.base.map}
+                  roughness={0.45}
+                  metalness={0.25}
+                  clearcoat={0.6}
+                  clearcoatRoughness={0.3}
+                />
             </mesh>
             <mesh geometry={nodes.clip.geometry} material={materials.metal} material-roughness={0.3} />
             <mesh geometry={nodes.clamp.geometry} material={materials.metal} />
@@ -154,7 +156,15 @@ function Band({ maxSpeed = 50, minSpeed = 10, isMobile }) {
 
       <mesh ref={band}>
         <meshLineGeometry />
-        <meshLineMaterial color="white" depthTest={false} resolution={[width, height]} useMap map={texture} repeat={[-3, 1]} lineWidth={1} />
+       <meshLineMaterial
+          color="#777"
+          depthTest={false}
+          resolution={[width, height]}
+          useMap
+          map={texture}
+          repeat={[-3, 1]}
+          lineWidth={0.8}
+        />
       </mesh>
     </>
   )
