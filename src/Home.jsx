@@ -18,6 +18,66 @@ export default function App() {
   
   return (
     <>
+            {/* Navbar */}
+      <nav className="fixed top-0 left-0 w-full flex justify-between items-center p-4 bg-black bg-opacity-50 z-50">
+        {/* Logo a la izquierda */}
+        <div className="text-white font-bold text-xl cursor-pointer">
+          LuciaLogo
+        </div>
+
+        {/* Menú hamburguesa */}
+        <div className="md:hidden">
+          <button
+            className="text-white focus:outline-none"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {/* Icono de hamburguesa */}
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              {menuOpen ? (
+                // Icono de X cuando el menú está abierto
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                // Icono de hamburguesa
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              )}
+            </svg>
+          </button>
+        </div>
+
+        {/* Menú para escritorio */}
+        <ul className="hidden md:flex space-x-6 text-white font-medium">
+          <li className="cursor-pointer hover:text-gray-400">Home</li>
+          <li className="cursor-pointer hover:text-gray-400">Portfolio</li>
+          <li className="cursor-pointer hover:text-gray-400">Contact</li>
+        </ul>
+      </nav>
+
+      {/* Menú móvil desplegable */}
+      {menuOpen && (
+        <div className="fixed top-16 right-0 bg-black bg-opacity-90 w-48 p-4 flex flex-col space-y-3 text-white z-40 md:hidden">
+          <a href="#" className="hover:text-gray-400">Home</a>
+          <a href="#" className="hover:text-gray-400">Portfolio</a>
+          <a href="#" className="hover:text-gray-400">Contact</a>
+        </div>
+      )}
+
+      
       <Canvas camera={{ position: isMobile ? [0, 0, 15] : [0, 0, 13], fov: 25 }}>
         <color attach="background" args={['#000000']} />
       
