@@ -23,7 +23,7 @@ export default function App() {
       
         <ambientLight intensity={1.2} />
       
-        <Physics interpolate gravity={[0, -30, 0]} timeStep={1 / 60}>
+        <Physics interpolate gravity={[0, -40, 0]} timeStep={1 / 60}>
           <Band isMobile={isMobile} />
         </Physics>
       
@@ -50,7 +50,7 @@ export default function App() {
 function Band({ maxSpeed = 50, minSpeed = 10, isMobile }) {
   const band = useRef(), fixed = useRef(), j1 = useRef(), j2 = useRef(), j3 = useRef(), card = useRef()
   const vec = new THREE.Vector3(), ang = new THREE.Vector3(), rot = new THREE.Vector3(), dir = new THREE.Vector3()
-  const segmentProps = { type: 'dynamic', canSleep: true, colliders: false, angularDamping: 8, linearDamping: 4 }
+  const segmentProps = { type: 'dynamic', canSleep: true, colliders: false, angularDamping: 4, linearDamping: 4 }
   const { nodes, materials } = useGLTF(tagModel)
   const texture = useTexture(bandTexture)
   const { width, height } = useThree((state) => state.size)
@@ -98,10 +98,7 @@ function Band({ maxSpeed = 50, minSpeed = 10, isMobile }) {
       curve.points[1].copy(j2.current.lerped)
       curve.points[2].copy(j1.current.lerped)
       curve.points[3].copy(fixed.current.translation())
-     
-      const points = curve.getPoints(32)
-      points.splice(0, 2) // elimina 2 puntos del extremo de la card
-      band.current.geometry.setPoints(points)
+      band.current.geometry.setPoints(curve.getPoints(32))
 
       ang.copy(card.current.angvel())
       rot.copy(card.current.rotation())
