@@ -19,7 +19,7 @@ export default function App() {
   return (
     <>
       <Canvas camera={{ position: isMobile ? [0, 0, 15] : [0, 0, 13], fov: 25 }}>
-        <color attach="background" args={['#fafafa']} />
+        <color attach="background" args={['#000000']} />
       
         <ambientLight intensity={1.2} />
       
