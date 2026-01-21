@@ -38,6 +38,11 @@ export default function App() {
           <Lightformer intensity={8} color="white" position={[-10, 0, 14]} rotation={[0, Math.PI / 2, Math.PI / 3]} scale={[100, 10, 1]} />
         </Environment>
       </Canvas>
+      {/* Flecha animada hacia abajo */}
+     <span className="text-white text-3xl animate-bounce rotate-180 cursor-pointer">
+        &#94; 
+      </span>
+      </div>
 
    
     </>
