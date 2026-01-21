@@ -22,29 +22,37 @@ export default function App() {
     <>
   <Navbar />
       
-      <Canvas camera={{ position: isMobile ? [0, 0, 15] : [0, 0, 13], fov: 25 }}>
-        <color attach="background" args={['#000000']} />
-      
-        <ambientLight intensity={1.2} />
-      
-        <Physics interpolate gravity={[0, -40, 0]} timeStep={1 / 60}>
-          <Band isMobile={isMobile} />
-        </Physics>
-      
-        <Environment blur={0.75}>
-          <Lightformer intensity={2} color="white" position={[0, -1, 5]} rotation={[0, 0, Math.PI / 3]} scale={[100, 0.1, 1]} />
-          <Lightformer intensity={3} color="white" position={[-1, -1, 1]} rotation={[0, 0, Math.PI / 3]} scale={[100, 0.1, 1]} />
-          <Lightformer intensity={3} color="white" position={[1, 1, 1]} rotation={[0, 0, Math.PI / 3]} scale={[100, 0.1, 1]} />
-          <Lightformer intensity={8} color="white" position={[-10, 0, 14]} rotation={[0, Math.PI / 2, Math.PI / 3]} scale={[100, 10, 1]} />
-        </Environment>
-      </Canvas>
-    <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-50">
-      <span className="text-white text-3xl animate-bounce rotate-180 cursor-pointer">
-        &#94; 
-      </span>
-    </div>
 
-   
+      {/* Contenedor relativo para Canvas y elementos encima */}
+      <div className="relative w-screen h-screen">
+        <Canvas
+          style={{ width: '100%', height: '100%' }}
+          camera={{ position: isMobile ? [0, 0, 15] : [0, 0, 13], fov: 25 }}
+        >
+          <color attach="background" args={['#000000']} />
+          <ambientLight intensity={1.2} />
+          <Physics interpolate gravity={[0, -40, 0]} timeStep={1 / 60}>
+            <Band isMobile={isMobile} />
+          </Physics>
+          <Environment blur={0.75}>
+            <Lightformer intensity={2} color="white" position={[0, -1, 5]} rotation={[0, 0, Math.PI / 3]} scale={[100, 0.1, 1]} />
+            <Lightformer intensity={3} color="white" position={[-1, -1, 1]} rotation={[0, 0, Math.PI / 3]} scale={[100, 0.1, 1]} />
+            <Lightformer intensity={3} color="white" position={[1, 1, 1]} rotation={[0, 0, Math.PI / 3]} scale={[100, 0.1, 1]} />
+            <Lightformer intensity={8} color="white" position={[-10, 0, 14]} rotation={[0, Math.PI / 2, Math.PI / 3]} scale={[100, 10, 1]} />
+          </Environment>
+        </Canvas>
+
+        {/* Flecha animada encima del Canvas */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-50">
+          <motion.span
+            className="text-white text-3xl cursor-pointer rotate-180"
+            animate={{ y: [0, 15, 0] }}
+            transition={{ duration: 1.2, repeat: Infinity, ease: "easeInOut" }}
+          >
+            &#94;
+          </motion.span>
+        </div>
+      </div>
     </>
   )
 }
