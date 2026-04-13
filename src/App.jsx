@@ -1,5 +1,4 @@
-// App.jsx
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import Home from './Home.jsx'
 import Portfolio from './Portfolio.jsx'
 
@@ -8,6 +7,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   )
 }
